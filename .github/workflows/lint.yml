@@ -23,17 +23,5 @@ jobs:
         run: npm install
       - name: Run the linter
         run: ./lint
-      - name: Create the diagram
-        run: ./diagram > diagram.md
-      - name: Save the diagram
-        run: |
-          git add diagram.md
-          git status
-          git remote -v
-          new_branch="${{ github.ref_name }}-diagram"
-          git branch -D "${new_branch}" || :
-          git checkout -b "${new_branch}"
-          git config user.name "${{ github.workflow }}"
-          git config user.email "github-actions@example.com"
-          git commit -m "Diagram saved by lint.yml workflow"
-          git push --set-upstream "$( git remote )" --force "${new_branch}"
+      - name: Check the diagram
+        run: ./diagram --check

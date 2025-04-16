@@ -1,15 +1,21 @@
 #!/bin/bash
 
-set -euo pipefail
+if [ $# -eq 1 -a "$1" == "--check" ] ; then
+  node diagram.js
+  git add diagram.md
+  if ! git diff --cached --exit-code diagram.md ; then
+    echo "Changes detected in diagram.md. Please run './diagram --write' and commit the results."
+    exit 1
+  fi
+  exit 0
+fi
 
-cat <<MERMAID
-\`\`\`mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-    D-->E;
-    E["generated at $( date )"]
-\`\`\`
-MERMAID
+if [ $# -eq 1 -a "$1" == "--write" ] ; then
+  node diagram.js
+  git add diagram.md
+  git status diagram.md
+  exit 0
+fi
+
+echo "Usage: './diagram --write' or './diagram --check'" >&2
+exit 1

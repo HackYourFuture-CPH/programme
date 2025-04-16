@@ -1,3 +1,5 @@
+"use strict";
+
 import { exec } from "node:child_process";
 import * as path from "node:path";
 
@@ -73,10 +75,9 @@ const makeResolver = (filenameToNodeId) => {
   };
 };
 
-const main = async () => {
-  const markdownFilenames = await findMarkdownFiles();
-  const links = await scanForLinks(markdownFilenames);
-  const trimmed = localMarkdownToMarkdownLinks(links);
+const buildGraph = (markdownFilenames, trimmed) => {
+  const nodeLines = [];
+  const edgeLines = [];
 
   const filenameToNodeId = new Map(
     markdownFilenames.map((filename, index) => [filename, `id${index}`]),
@@ -86,12 +87,8 @@ const main = async () => {
   const targetResolver = makeResolver(filenameToNodeId);
   const seenEdges = new Set();
 
-  console.log("```mermaid");
-  //   console.log("graph TD;"); // top-down
-  console.log("graph LR;"); // left-right
-
   for (const [filename, nodeId] of filenameToNodeId.entries()) {
-    console.log(`  ${nodeId}[${JSON.stringify(filename)}]`);
+    nodeLines.push(`  ${nodeId}[${JSON.stringify(filename)}]`);
   }
 
   for (const links of trimmed) {
@@ -102,20 +99,32 @@ const main = async () => {
 
       if (r.isNew) {
         const label = `?? ${r.resolved} ??`;
-        console.log(`  ${r.id}[${JSON.stringify(label)}]`);
+        nodeLines.push(`  ${r.id}[${JSON.stringify(label)}]`);
       }
 
       const edgeKey = `${fromNodeId} to ${r.id}`;
       if (!seenEdges.has(edgeKey)) {
-        console.log(`  ${fromNodeId}-->${r.id}`);
+        edgeLines.push(`  ${fromNodeId}-->${r.id}`);
         seenEdges.add(edgeKey);
       }
     }
   }
 
-  console.log("```");
+  // Stable output
+  return [...nodeLines.toSorted(), ...edgeLines.toSorted()];
+};
 
-  //   console.dir({ trimmed, e: [...m.entries()] }, { depth: 5 });
+const main = async () => {
+  const markdownFilenames = await findMarkdownFiles();
+  const links = await scanForLinks(markdownFilenames);
+  const trimmed = localMarkdownToMarkdownLinks(links);
+
+  const graphLines = buildGraph(markdownFilenames, trimmed);
+  const graphContent =
+    ["```mermaid", "graph LR;", ...graphLines, "```"].join("\n") + "\n";
+
+  await writeFile("diagram.md", graphContent, "utf-8");
+  console.log("Wrote diagram.md");
 };
 
 main().catch((error) => {
