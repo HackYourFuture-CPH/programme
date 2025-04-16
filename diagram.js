@@ -15,7 +15,7 @@ const findMarkdownFilesInGit = async () => {
 };
 
 const findMarkdownFiles = async () => {
-  const ignorePattern = /^(README|LICENSE|contributing\/)/;
+  const ignorePattern = /^(README|LICENSE|contributing|diagram)/;
   return (await findMarkdownFilesInGit()).filter((f) => !ignorePattern.test(f));
 };
 
@@ -121,7 +121,9 @@ const main = async () => {
 
   const graphLines = buildGraph(markdownFilenames, trimmed);
   const graphContent =
-    ["```mermaid", "graph LR;", ...graphLines, "```"].join("\n") + "\n";
+    ["# Diagram", "", "```mermaid", "graph LR;", ...graphLines, "```"].join(
+      "\n",
+    ) + "\n";
 
   await writeFile("diagram.md", graphContent, "utf-8");
   console.log("Wrote diagram.md");
