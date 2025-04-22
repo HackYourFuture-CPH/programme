@@ -2,5 +2,11 @@
   "dependencies": {
     "markdownlint-cli": "^0.44.0",
     "prettier": "^3.5.3"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
   }
 }
