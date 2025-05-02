@@ -6,15 +6,15 @@ To restructure existing JavaScript and Node.js content into a new modular curric
 
 This is schemas for current module structures. I will use the same **color-coding** for the parts of new modules, so it would be obvious where is this topic is coming from. You can also use the attached file to have interactive schemas in [draw.io ](https://app.diagrams.net/)
 
-[Click to dowload hyf.drawio.zip](https://github.com/user-attachments/files/19875331/hyf.drawio.zip)
+Here's the [draw.io source file](./js-node-plan.drawio) for the diagrams in this document.
 
-![Image](https://github.com/user-attachments/assets/894799bd-c19a-49ea-a1bc-f0c14cab66e0)
+![Image](./hyf.drawio.legacy-js1.png)
 
-![Image](https://github.com/user-attachments/assets/53027cc4-f720-43ee-bce5-e310000298d1)
+![Image](./hyf.drawio.legacy-js2.png)
 
-![Image](https://github.com/user-attachments/assets/c7f2a630-dfd7-4dda-aabe-f70e1c83987c)
+![Image](./hyf.drawio.legacy-js3.png)
 
-![Image](https://github.com/user-attachments/assets/b9985e8d-90ad-4215-90ec-1275449717af)
+![Image](./hyf.drawio.legacy-nodejs.png)
 
 ---
 
@@ -45,7 +45,7 @@ This is schemas for current module structures. I will use the same **color-codin
 - **Week 3**: Arrays (no map/filter/reduce), Objects, Call stack
 - **Week 4**: Recap and Problem Solving
 
-![Image](https://github.com/user-attachments/assets/03dd07df-6bb7-48a4-9aeb-053744da16af)
+![Image](./hyf.drawio.proposal-general-js.png)
 
 #### Final Week Homework Note:
 
@@ -68,13 +68,13 @@ Introduce small reusable logic/function tasks already in the final week (e.g., c
 - Databases
 - Conceptual overview of deployment (to prepare for real-world usage in final project)
 
-![Image](https://github.com/user-attachments/assets/c01ec981-9b9a-4b4f-8bbf-71489a800e0a)
+![Image](./hyf.drawio.proposal-web-architecture-101.png)
 
 ### 3. Module: Introduction to Backend
 
 **Duration**: 1 week\
 **Purpose**: Provide a hands-on primer to backend development. Enables learners to build a basic working backend (simple CRUD server or even less).\
-**Reasoning**: Placing backend first in hands-on development allows learners to apply their JavaScript fundamentals while reinforcing their understanding of APIs introduced in Web Architecture 101. This progression is both natural and confidence-building: learners already know how to write logic, and now they can wrap it in endpoints (basically, another level of functions). Starting here also clarifies the API  before they consume it from the frontend side.
+**Reasoning**: Placing backend first in hands-on development allows learners to apply their JavaScript fundamentals while reinforcing their understanding of APIs introduced in Web Architecture 101. This progression is both natural and confidence-building: learners already know how to write logic, and now they can wrap it in endpoints (basically, another level of functions). Starting here also clarifies the API before they consume it from the frontend side.
 
 #### Topics:
 
@@ -82,10 +82,10 @@ Introduce small reusable logic/function tasks already in the final week (e.g., c
 - Simple web server
 - Using Postman to test endpoints
 - CRUD implementation (focus on code, not theory)
-- *Optional*: Basic DB interaction (since we have a module, but not necessary)
+- _Optional_: Basic DB interaction (since we have a module, but not necessary)
 - Optional: Introduce a simple one-click deployment path
 
-![Image](https://github.com/user-attachments/assets/e7516502-8137-40d0-ba8c-3999a417c408)
+![Image](./hyf.drawio.proposal-intro-to-back-end.png)
 
 ### 4. Module: Introduction to Frontend
 
@@ -98,9 +98,9 @@ Introduce small reusable logic/function tasks already in the final week (e.g., c
 - DOM manipulation basics
 - Event listeners (focus on usage, no callback explanation)
 - `fetch()` for calling APIs (usage only — promises explained later)
-- *Optional*: Introduce a simple one-click deployment path
+- _Optional_: Introduce a simple one-click deployment path
 
-![Image](https://github.com/user-attachments/assets/aab89368-8620-4ede-a0ed-3ce5575435bc)
+![Image](./hyf.drawio.proposal-intro-to-front-end.png)
 
 ### Open Questions:
 
@@ -124,7 +124,7 @@ Introduce small reusable logic/function tasks already in the final week (e.g., c
 - **Week 3**: Promises, Async/Await
 - **Week 4**: Classes, Advanced Promises
 
-![Image](https://github.com/user-attachments/assets/2d61e291-0abd-42a6-9eca-43ee38bb4bfb)
+![Image](./hyf.drawio.proposal-advanced-js.png)
 
 #### Track-specific differentiation:
 
@@ -155,7 +155,7 @@ Introduce small reusable logic/function tasks already in the final week (e.g., c
   - API Design (REST, CRUD)
   - Database interaction (expanded)
 
-![Image](https://github.com/user-attachments/assets/6d309db1-e849-4412-b93c-9705b993e2a2)
+![Image](./hyf.drawio.proposal-nodejs.png)
 
 **Optional changes:**
 
@@ -171,8 +171,8 @@ Introduce small reusable logic/function tasks already in the final week (e.g., c
 
 > Should we introduce js module/import/export concept in foundation or not?
 
-*Option 1*: It might be natural to introduce separate files in «Introduction to Backend», and then mention in «Introduction to Frontend» how it is solved there.
+_Option 1_: It might be natural to introduce separate files in «Introduction to Backend», and then mention in «Introduction to Frontend» how it is solved there.
 
-*Option 2*: Introduce idea of structuring files (and import/export) on «Web Architecture 101» session.
+_Option 2_: Introduce idea of structuring files (and import/export) on «Web Architecture 101» session.
 
-*Option 3*: Not to give this concept in Foundation, because it seems like it can be done in one file, and later they will have to have separate files in React / Node anyway.
+_Option 3_: Not to give this concept in Foundation, because it seems like it can be done in one file, and later they will have to have separate files in React / Node anyway.
