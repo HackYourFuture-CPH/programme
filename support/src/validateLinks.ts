@@ -77,6 +77,16 @@ const main = async () => {
       ++errors;
     }
 
+    for (const found of parsedFile.deprecatedTerm) {
+      showError(
+        parsedFile.filename,
+        found.sourceLocation,
+        "VL004/deprecated-term",
+        `Deprecated term '${found.term}'`,
+      );
+      if (found.term !== "class") ++errors;
+    }
+
     for (const img of parsedFile.images) {
       if (!isExternalLink(img.src)) {
         const resolved = path.join(dirname(parsedFile.filename), img.src);
