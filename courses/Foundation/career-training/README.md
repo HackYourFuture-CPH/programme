@@ -1,7 +1,25 @@
 # Career Training
 
-We need to cover career skills in foundation for two reasons: these skills take a long time to practice and develop, so they should start now. Secondly, in theory some people could leave now with the goal to get an entry level role in tech, and we should prepare them as best we can.
+Welcome to your Career Sessions!
 
-We already have an existing module that we will teach the same at the end of a specialism, but let’s use it for inspiration here too:
+In this repository you can find all the info and material from your Career Sessions, what to prepare for each session and resources that can be used to support you and the community in finding a job in tech. The goal of this series of sessions is to optimally prepare you for the job hunt in Denmark's IT industry following your graduation from our bootcamp by helping you identify and communicate your specific competencies and skills.
 
-**Week 1:** Some light version of [legacy week1](../../../legacy/career-training/week-1/) and [legacy week 2](../../../legacy/career-training/week-2/) combined and tweak to be more relevant for foundation grads. Technical interviews (../../../legacy/career-training/week-3/) are mostly only relevant for software engineers, so leave that out of here (let’s use them in the application process to a specialism course instead, for practice).
+| Week | Topic                                                                                                                                                                                                                                   | Preparation                           | Lesson Plan                           | Assignment                          |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | ------------------------------------- | ----------------------------------- |
+| 1.   | [Intro to The Danish Job Market](./week1/README.md). Initial session where we introduce general info about the job market, job search process, recruitment practices and the role of unions.                                            | [Preparation](./week1/preparation.md) | [Lesson Plan](./week1/lesson-plan.md) | (There is no assignment)            |
+| 2.   | [The Jobseeker Toolkit](./week2/README.md). This session is used to show the importance of having a strong CV, LinkedIn and GitHub. We will do break-out rooms with small exercises where they have to identify good and bad practices. | [Preparation](./week2/preparation.md) | [Lesson Plan](./week2/lesson-plan.md) | [Assignment](./week2/assignment.md) |
+| 3.   | [Mock Screening Interview](./week3/README.md). This session is for practicing interviews and receiving feedback from peers and volunteers, performing your elevator pitch and getting CV/LinkedIn photos taken.                         | [Preparation](./week3/preparation.md) | [Lesson Plan](./week3/lesson-plan.md) | (There is no assignment)            |
+
+## Learning Goals
+
+By the end of the three Career Sessions, you should be able to:
+
+- [ ] Understand where to look for suitable jobs and internships.
+- [ ] Understand what you should do in order to be an attractive candidate on the Danish - job market.
+- [ ] Learn how to identify and communicate your competencies.
+- [ ] Understand what HYF can do to support you on your job hunt.
+- [ ] Know how to assemble an effective CV.
+- [ ] Know how to make your Linkedin page attractive to recruiters.
+- [ ] Know how to make your GitHub page attractive to recruiters.
+- [ ] Learn how to perform well in a screening interview.
+- [ ] How to handle Job Rejection and Job Anxiety
