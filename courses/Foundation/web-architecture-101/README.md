@@ -1,3 +1,4 @@
 # Web Architecture 101
 
-TODO
+- [Goals](./goals.md) of this module
+- the [presentation](./presentation/README.md)
