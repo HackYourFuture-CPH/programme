@@ -7,7 +7,7 @@ Our QA Tech Track offers a comprehensive 15-week training program designed to eq
 | Name                                                                                         | Weeks |
 | -------------------------------------------------------------------------------------------- | ----- |
 | [QA Foundations & Software Development Basics](/courses/qa/basics-of-testing/README.md)      | 4     |
-| [Web Testing, UI Automation & Modern QA Tools](/courses/qa/test-automation/README.md)       | 5     |
+| [Web Testing, UI Automation & Modern QA Tools](/courses/qa/test-automation/README.md)        | 5     |
 | [Practical Test Planning, Agile & Project Management](/courses/qa/test-management/README.md) | 3     |
 | [Final Demo Project](/courses/qa/final-demo-project/README.md)                               | 2     |
 | [Career Training](/courses/qa/career-training/README.md)                                     | 1     |
