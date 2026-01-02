@@ -1,4 +1,4 @@
-# TEST AUTOMATION
+# Web Testing, UI Automation & Modern QA Tools
 
 Here you can find course content and the assignments for the Test automation module. This module basically focus on web app testing, modern UI automation, and new automation focuses (Accessibility & Performance).
 

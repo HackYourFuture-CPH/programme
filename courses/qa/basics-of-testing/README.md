@@ -1,4 +1,4 @@
-# BASICS OF TESTING
+# QA Foundations & Software Development Basics
 
 Here you can find course content and the assignments for the Basics of Testing module. This module basically focus on Establishing the core QA mindset and foundational concepts.
 

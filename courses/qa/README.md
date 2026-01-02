@@ -4,13 +4,13 @@ Our QA Tech Track offers a comprehensive 15-week training program designed to eq
 
 ## Modules
 
-| Name                                                           | Weeks |
-| -------------------------------------------------------------- | ----- |
-| [Basics Of Testing](/courses/qa/basics-of-testing/README.md)   | 4     |
-| [Test Automation](/courses/qa/test-automation/README.md)       | 5     |
-| [Test Management](/courses/qa/test-management/README.md)       | 3     |
-| [Final Demo Project](/courses/qa/final-demo-project/README.md) | 2     |
-| [Career Training](/courses/qa/career-training/README.md)       | 1     |
+| Name                                                                                         | Weeks |
+| -------------------------------------------------------------------------------------------- | ----- |
+| [QA Foundations & Software Development Basics](/courses/qa/basics-of-testing/README.md)      | 4     |
+| [Web Testing, UI Automation & Modern QA Tools](/courses/qa/test-automation/README.md)       | 5     |
+| [Practical Test Planning, Agile & Project Management](/courses/qa/test-management/README.md) | 3     |
+| [Final Demo Project](/courses/qa/final-demo-project/README.md)                               | 2     |
+| [Career Training](/courses/qa/career-training/README.md)                                     | 1     |
 
 Total: 15 weeks
 
@@ -20,7 +20,7 @@ Total: 15 weeks
 <!-- prettier-ignore-start -->
 <!-- BEGIN generate:learning-goals -->
 
-### [Basics of Testing](/courses/qa/basics-of-testing)
+### [QA Foundations & Software Development Basics](/courses/qa/basics-of-testing)
 
 - [ ] Understand what QA is and why it matters
 - [ ] Learn SDLC models (Waterfall vs Agile) and QA’s role in them
@@ -30,7 +30,7 @@ Total: 15 weeks
 - [ ] Learn test case design and techniques like Equivalence Partitioning & Boundary Value Analysis
 - [ ] Practice writing clear bug reports and effective test cases
 
-### [Test Automation](/courses/qa/test-automation)
+### [Web Testing, UI Automation & Modern QA Tools](/courses/qa/test-automation)
 
 - [ ] Understand web application architecture and common testing challenges.
 - [ ] Perform cross-browser and responsive design testing.
@@ -40,7 +40,7 @@ Total: 15 weeks
 - [ ] Perform basic performance testing and interpret key metrics.
 - [ ] Apply best practices for maintaining automated test suites.
 
-### [Test Management](/courses/qa/test-management)
+### [Practical Test Planning, Agile & Project Management](/courses/qa/test-management)
 
 - [ ] Understand the purpose and structure of a Test Plan and Test Strategy.
 - [ ] Define scope, objectives, risks, and environments for testing.
@@ -53,7 +53,12 @@ Total: 15 weeks
 
 ### [Final Demo Project](/courses/qa/final-demo-project)
 
-- [ ] Todo
+- [ ] Build the ability to define QA scope from requirements.
+- [ ] Develop competency in creating and validating test strategies.
+- [ ] Understand defect lifecycle and effective communication in JIRA.
+- [ ] Gain hands-on experience with modern automation frameworks (Playwright, POM).
+- [ ] Learn principles of accessibility and performance testing.
+- [ ] Strengthen analytical skills for interpreting QA metrics and presenting insights.
 
 ### [Career Training](/courses/qa/career-training)
 
