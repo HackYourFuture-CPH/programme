@@ -4,7 +4,12 @@ Welcome to your final project! Here you can learn more about the goals and requi
 
 ## Module Learning Goals
 
-- [ ] Todo
+- [ ] Build the ability to define QA scope from requirements.
+- [ ] Develop competency in creating and validating test strategies.
+- [ ] Understand defect lifecycle and effective communication in JIRA.
+- [ ] Gain hands-on experience with modern automation frameworks (Playwright, POM).
+- [ ] Learn principles of accessibility and performance testing.
+- [ ] Strengthen analytical skills for interpreting QA metrics and presenting insights.
 
 ## Key Activities
 
