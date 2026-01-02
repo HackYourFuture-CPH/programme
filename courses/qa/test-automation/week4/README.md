@@ -1,4 +1,6 @@
-# TEST AUTOMATION, Week 4
+# Web Testing, UI Automation & Modern QA Tools, Week 4
+
+## Accessibility Testing Fundamentals & Playwright
 
 In this session, trainees will learn the importance of web accessibility and how to test it both manually and through automation. We will cover WCAG standards, perform basic manual accessibility checks (keyboard navigation and screen reader basics), and automate accessibility testing using Playwright with Axe-core. This week also focuses on analyzing and reporting accessibility defects effectively.
 

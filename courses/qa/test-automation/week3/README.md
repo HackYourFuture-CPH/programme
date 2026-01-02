@@ -1,4 +1,6 @@
-# TEST AUTOMATION, Week 3
+# Web Testing, UI Automation & Modern QA Tools, Week 3
+
+## Building Automation Structure & Page Object Model (POM)
 
 In this session, trainees will learn how to organize test automation projects for scalability and maintainability. We will cover test suite structure, reusing locators and actions, and introduce the Page Object Model (POM) design pattern. This week also focuses on creating Page Object classes in Playwright, understanding the benefits of modular test design, and an introduction to test reporting.
 

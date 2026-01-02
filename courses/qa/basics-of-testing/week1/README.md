@@ -1,4 +1,6 @@
-# BASICS OF TESTING, Week 1
+# QA Foundations & Software Development Basics, Week 1
+
+## Introduction to QA and Software Development
 
 In this session, trainees will be introduced to Quality Assurance (QA) and its importance in software development. We will explore the Software Development Life Cycle (SDLC), QA’s role in different models, and essential QA terminology. This week also focuses on building the QA mindset and understanding soft skills required for effective testing.
 

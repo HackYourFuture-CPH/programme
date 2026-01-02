@@ -1,4 +1,6 @@
-# TEST AUTOMATION, Week 1
+# Web Testing, UI Automation & Modern QA Tools, Week 1
+
+## Web Testing with DevTools
 
 In this session, trainees will learn the fundamentals of web testing using browser developer tools. We will cover client–server architecture, the structure of web pages (DOM, HTML, CSS, and basic JavaScript), and how to use DevTools effectively for testing. This week focuses on identifying common front-end issues and analyzing network requests.
 

@@ -1,4 +1,6 @@
-# TEST MANAGEMENT, Week 3
+# Practical Test Planning, Agile & Project Management, Week 3
+
+## QA Metrics, Reporting & Demo Project Preparation
 
 In this session, trainees will learn how to measure QA effectiveness using key metrics and communicate testing progress clearly to stakeholders. We will cover common QA metrics for a feature, reporting best practices, and review all manual and automation topics covered so far. This week also includes planning for the final demo project, defining scope, and organizing teams.
 

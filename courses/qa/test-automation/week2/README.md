@@ -1,4 +1,6 @@
-# TEST AUTOMATION, Week 2
+# Web Testing, UI Automation & Modern QA Tools, Week 2
+
+## Introduction to Test Automation with Playwright (TypeScript)
 
 In this session, trainees will learn the fundamentals of UI test automation using Playwright with TypeScript. We will cover why automation is important, how to set up the Playwright and Node.js environment, and basic TypeScript concepts for testers. This week focuses on writing and running your first Playwright test, understanding selectors and assertions, and executing tests in headed and headless modes.
 

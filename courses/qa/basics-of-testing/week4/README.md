@@ -1,4 +1,6 @@
-# BASICS OF TESTING, Week 4
+# QA Foundations & Software Development Basics, Week 4
+
+## Test Design Basics
 
 In this session, trainees will learn how to design effective test cases and manage test data. We will cover what a test case is, its structure, and examples of good vs bad test cases. This week also introduces test design techniques such as Equivalence Partitioning and Boundary Value Analysis, which help create efficient and comprehensive test coverage.
 

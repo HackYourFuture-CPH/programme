@@ -1,4 +1,6 @@
-# BASICS OF TESTING, Week 2
+# QA Foundations & Software Development Basics, Week 2
+
+## Testing Fundamentals
 
 In this session, trainees will learn the core principles of software testing and its role in ensuring product quality. We will explore different types of testing, levels of testing, and approaches to executing tests effectively. This week emphasizes understanding functional vs non-functional testing, manual vs automated testing, and how to analyze requirements to define test scenarios.
 

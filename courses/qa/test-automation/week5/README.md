@@ -1,4 +1,6 @@
-# TEST AUTOMATION, Week 5
+# Web Testing, UI Automation & Modern QA Tools, Week 5
+
+## Performance & Modern Tooling (Lighthouse)
 
 In this session, trainees will learn the fundamentals of front-end performance testing and how modern tools like Google Lighthouse help QA teams ensure quality. We will cover key performance metrics, run Lighthouse audits, interpret reports, and explore automation options using Lighthouse CLI or Node module.
 

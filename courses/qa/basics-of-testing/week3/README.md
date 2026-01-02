@@ -1,4 +1,6 @@
-# BASICS OF TESTING, Week 3
+# QA Foundations & Software Development Basics, Week 3
+
+## Bug Life Cycle & Defect Reporting
 
 In this session, trainees will learn how defects are managed throughout their life cycle and how to report them effectively. We will cover the difference between a defect and a bug, explore defect statuses, and understand severity vs priority. This week also introduces best practices for writing clear, reproducible bug reports and provides hands-on experience with JIRA.
 

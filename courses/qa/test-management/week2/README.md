@@ -1,4 +1,6 @@
-# TEST MANAGEMENT, Week 2
+# Practical Test Planning, Agile & Project Management, Week 2
+
+## Agile Testing & Working with User Stories
 
 In this session, trainees will learn how QA integrates into Agile development processes. We will cover Agile principles, Scrum roles, artifacts, and ceremonies, and explore QA’s responsibilities during sprint planning and estimation. This week emphasizes analyzing User Stories and Acceptance Criteria (AC) to create effective test cases and maintaining continuous testing and feedback throughout the sprint.
 

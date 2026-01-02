@@ -1,4 +1,6 @@
-# TEST MANAGEMENT, Week 1
+# Practical Test Planning, Agile & Project Management, Week 1
+
+## Test Planning, Strategy & Scope
 
 In this session, trainees will learn how to create effective test plans and strategies for real-world projects. We will cover the purpose of a Test Plan and Test Strategy, key sections such as scope, objectives, risks, and test environments, and practical test case management techniques. This week also introduces requirement traceability to ensure complete coverage from requirements to test cases and defects.
 
