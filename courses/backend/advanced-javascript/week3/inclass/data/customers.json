@@ -1,0 +1,7 @@
+[
+  { "id": 101, "name": "Alice Chen", "email": "alice@example.com", "memberSince": "2023-01-15", "tier": "gold" },
+  { "id": 102, "name": "Bob Smith", "email": "bob@example.com", "memberSince": "2024-03-20", "tier": "silver" },
+  { "id": 103, "name": "Fatima Al-Rashid", "email": "fatima@example.com", "memberSince": "2022-11-08", "tier": "gold" },
+  { "id": 104, "name": "Jun Tanaka", "email": "jun@example.com", "memberSince": "2024-08-01", "tier": "bronze" },
+  { "id": 105, "name": "Maria Santos", "email": "maria@example.com", "memberSince": "2023-06-12", "tier": "silver" }
+]

@@ -1,0 +1,22 @@
+[
+  { "id": 1, "name": "Sencha", "type": "green", "origin": "Japan", "pricePerGram": 0.12, "caffeineLevel": "medium", "organic": true, "inStock": true, "stockCount": 150 },
+  { "id": 2, "name": "Earl Grey", "type": "black", "origin": "India", "pricePerGram": 0.08, "caffeineLevel": "high", "organic": false, "inStock": true, "stockCount": 200 },
+  { "id": 3, "name": "Dragon Well", "type": "green", "origin": "China", "pricePerGram": 0.25, "caffeineLevel": "medium", "organic": true, "inStock": true, "stockCount": 45 },
+  { "id": 4, "name": "Chamomile", "type": "herbal", "origin": "Egypt", "pricePerGram": 0.10, "caffeineLevel": "none", "organic": true, "inStock": true, "stockCount": 180 },
+  { "id": 5, "name": "Darjeeling", "type": "black", "origin": "India", "pricePerGram": 0.18, "caffeineLevel": "high", "organic": false, "inStock": true, "stockCount": 90 },
+  { "id": 6, "name": "Oolong", "type": "oolong", "origin": "Taiwan", "pricePerGram": 0.22, "caffeineLevel": "medium", "organic": true, "inStock": true, "stockCount": 60 },
+  { "id": 7, "name": "Peppermint", "type": "herbal", "origin": "USA", "pricePerGram": 0.08, "caffeineLevel": "none", "organic": true, "inStock": true, "stockCount": 220 },
+  { "id": 8, "name": "Matcha", "type": "green", "origin": "Japan", "pricePerGram": 0.45, "caffeineLevel": "high", "organic": true, "inStock": true, "stockCount": 30 },
+  { "id": 9, "name": "Assam", "type": "black", "origin": "India", "pricePerGram": 0.09, "caffeineLevel": "high", "organic": false, "inStock": true, "stockCount": 175 },
+  { "id": 10, "name": "White Peony", "type": "white", "origin": "China", "pricePerGram": 0.30, "caffeineLevel": "low", "organic": true, "inStock": true, "stockCount": 55 },
+  { "id": 11, "name": "Rooibos", "type": "herbal", "origin": "South Africa", "pricePerGram": 0.11, "caffeineLevel": "none", "organic": true, "inStock": true, "stockCount": 140 },
+  { "id": 12, "name": "Gyokuro", "type": "green", "origin": "Japan", "pricePerGram": 0.56, "caffeineLevel": "high", "organic": false, "inStock": false, "stockCount": 0 },
+  { "id": 13, "name": "Lapsang Souchong", "type": "black", "origin": "China", "pricePerGram": 0.15, "caffeineLevel": "medium", "organic": false, "inStock": true, "stockCount": 85 },
+  { "id": 14, "name": "Silver Needle", "type": "white", "origin": "China", "pricePerGram": 0.50, "caffeineLevel": "low", "organic": true, "inStock": true, "stockCount": 25 },
+  { "id": 15, "name": "Genmaicha", "type": "green", "origin": "Japan", "pricePerGram": 0.10, "caffeineLevel": "low", "organic": false, "inStock": true, "stockCount": 110 },
+  { "id": 16, "name": "Tie Guan Yin", "type": "oolong", "origin": "China", "pricePerGram": 0.30, "caffeineLevel": "medium", "organic": true, "inStock": true, "stockCount": 40 },
+  { "id": 17, "name": "English Breakfast", "type": "black", "origin": "Sri Lanka", "pricePerGram": 0.06, "caffeineLevel": "high", "organic": false, "inStock": true, "stockCount": 250 },
+  { "id": 18, "name": "Hibiscus", "type": "herbal", "origin": "Sudan", "pricePerGram": 0.09, "caffeineLevel": "none", "organic": true, "inStock": true, "stockCount": 95 },
+  { "id": 19, "name": "Pu-erh", "type": "black", "origin": "China", "pricePerGram": 0.35, "caffeineLevel": "medium", "organic": false, "inStock": false, "stockCount": 0 },
+  { "id": 20, "name": "Jasmine Pearl", "type": "green", "origin": "China", "pricePerGram": 0.32, "caffeineLevel": "medium", "organic": true, "inStock": true, "stockCount": 70 }
+]
