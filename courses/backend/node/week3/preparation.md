@@ -1,10 +1,8 @@
 # Preparation
 
-//TODO: link resources
-
 ## Snippets API
 
-1. Make sure you can run the **Snippets API** locally // TODO: after steamlining week 1 and 2
+1. Make sure you can run the **Snippets API** locally
 2. Make sure your Postman collection for **Snippets API** is up to date and you can use it in session.
 
 ## Memory refresh
