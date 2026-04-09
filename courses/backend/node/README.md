@@ -8,6 +8,7 @@ This module is part of the Backend specialism and focuses on using Node.js to bu
 | ---- | ---------------------------- | ------------------------------------- | ----------------------------------------------------- | ----------------------------------- |
 | 1.   | Express                      | [Preparation](./week1/preparation.md) | [Session plan](./week1/session-plan.md) (for mentors) | [Assignment](./week1/assignment.md) |
 | 2.   | API design and documentation | [Preparation](./week2/preparation.md) | [Session plan](./week2/session-plan.md) (for mentors) | [Assignment](./week1/assignment.md) |
+| 3.   | Authentication & Security    | [Preparation](./week3/preparation.md) | [Session plan](./week3/session-plan.md) (for mentors) | [Assignment](./week3/assignment.md) |
 
 ## Module Learning Goals
 
