@@ -20,7 +20,7 @@ validate-links() {
 
 markdownlint() {
   echo "markdownlint: RUN"
-  if npm exec -- markdownlint --ignore 'node_modules/' --rules markdownlint-rule-search-replace '**/*.md' ; then
+  if npm exec -- markdownlint --rules markdownlint-rule-search-replace '**/*.md' ; then
     echo "markdownlint: PASS"
   else
     echo "markdownlint: FAIL"
@@ -67,7 +67,7 @@ all() {
 }
 
 if [ "${1:-}" == "--fix" ] ; then
-  npm exec -- markdownlint --ignore 'node_modules/' --rules markdownlint-rule-search-replace --fix '**/*.md' || :
+  npm exec -- markdownlint --rules markdownlint-rule-search-replace --fix '**/*.md' || :
   npm exec -- prettier --write --list-different . || :
 elif [ "${1:-}" == "validate-links" ] ; then
   validate-links
