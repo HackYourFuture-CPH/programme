@@ -63,7 +63,7 @@ The requirements in the [Requirements](./requirements.md) and this plan are the 
 
 **Goal:** Introduce cart and session via Context, define routes, and make the app auth-aware.
 
-**React focus:** React Context, React Router. [Frontend spec](../frontend/technical-specification.md) requires Router + Context for cart and user session.
+**React focus:** React Context, React Router. [Requirements](./requirements.md) requires Router + Context for cart and user session.
 
 **PRD / spec:** Cart and user session in Context; distinct routes; auth-aware behaviour.
 
