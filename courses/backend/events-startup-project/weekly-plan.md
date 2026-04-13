@@ -1,4 +1,4 @@
-# Weekly Plan – Backend Project
+# Weekly Plan
 
 This document outlines the expected weekly progress and milestones for completing the backend project.
 The structure aligns with the Product Requirements Document (PRD), Shared API Contract, and Technical Specification.

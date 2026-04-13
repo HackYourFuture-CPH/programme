@@ -24,16 +24,15 @@ Welcome to your new job! We are an events startup, and you're here to help us de
 - We have an existing app that you'll build on top of - it's basic so there's lots to do.
 - We have some strict requirements that you need to implement, but there is space for personalisation too.
 
-## Requirements
+## Artifacts
 
-Familiarise yourself well with the following documents to understand what is required to complete the project.
+Familiarise yourself well with the following links to understand what is required to complete the project.
 
 Some of the requirements below are already working in the current version of the app, others will need to be implemented by you, and there are some suggestions of tasks where you can come up with additional ideas yourself.
 
-1. [Product Requirements Document (PRD)](./product-requirements-document.md)
-1. Technical Specification (spec)
-   1. [Frontend Course Spec](./frontend/technical-specification.md)
-   1. [Backend Course Spec](./backend/technical-specification.md)
+1. [Weekly Plan](./weekly-plan.md) - A guide for what to build each week
+1. [Requirements](./requirements.md) - The checklist you need to complete by the end of the project
+1. [Project Template](https://github.com/HackYourFuture-CPH/mid-backend-project-skeleton) - The codebase you need to fork to get started
 
 ## How to organise your project
 
@@ -45,22 +44,9 @@ Follow the requirements and practices from the [Intro to Agile](/courses/foundat
 - [ ] Create and prioritise your tasks at the start of each week, to have a clear idea of what will be required in that sprint
 - [ ] Submit a single pull request at the end of each sprint to be reviewed by your mentors.
 
-<!-- TODO: Consider setting up a Trello template with tags like sprint 1, sprint 2, or specific tasks to get them started -->
-
 ## Project delivery
 
-These are the final deliverables that you should submit by the end-of-project deadline:
-
-### Frontend
-
-Links to the following:
-
-- [ ] Trello board
-- [ ] Initial design sketches
-- [ ] GitHub repo
-- [ ] Deployed web app
-
-### Backend
+These are the final deliverables that you should submit by the end-of-project deadline.
 
 Links to the following:
 
