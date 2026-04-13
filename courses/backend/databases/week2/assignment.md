@@ -1,10 +1,12 @@
-# Week 2 Assignment — Advanced Database Concepts
+# Week 2 Assignment
 
-> **💡 New this week:** Parts 1, 3, and 4 of this assignment can be explored and validated in your browser using the **DB Playground** — a local SQLite environment that runs without any server or setup. See [Getting Started with the Playground](#getting-started-with-the-playground) below.
+## 1. Advanced Database Concepts
+
+> **💡 New this week:** Parts A, C, and D of this assignment can be explored and validated in your browser using the **DB Playground** — a local SQLite environment that runs without any server or setup. See [Getting Started with the Playground](#getting-started-with-the-playground) below.
 
 ---
 
-## Background
+### Background
 
 You will continue working with the `tasks.sqlite3` database from the Week 1 assignment. It should have the following tables: `user`, `task`, `status`, `category`, and `task_category`.
 
@@ -12,13 +14,13 @@ In this assignment you will write aggregate queries for reporting, learn to iden
 
 ---
 
-## Getting Started with the Playground
+### Getting Started with the Playground
 
-For **Parts 1, 3, and 4** of this assignment, you can use the **DB Playground** — a single HTML file that runs a full SQLite database directly in your browser using WebAssembly. No installation, no server, no configuration.
+For **Parts A, C, and D** of this assignment, you can use the **DB Playground** — a single HTML file that runs a full SQLite database directly in your browser using WebAssembly. No installation, no server, no configuration.
 
-> **Note:** Part 2 (SQL Injection) requires written answers and code — it cannot be validated in the Playground. You will need to submit those answers in your `.sql` file as comments.
+> **Note:** Part B (SQL Injection) requires written answers and code — it cannot be validated in the Playground. You will need to submit those answers in your `.sql` file as comments.
 
-### Option A — Use the Playground (recommended for Parts 1, 3 & 4)
+#### Option A — Use the Playground (recommended for Parts A, C & D)
 
 1. Open the **[DB Playground](https://amazing-brigadeiros-357b84.netlify.app/)** in **Chrome or Edge** (Firefox is not supported for file saving)
 2. Click **New DB** — this seeds the database with the same schema and sample data you worked with in Week 1, plus some additional rows for this week's exercises
@@ -29,13 +31,13 @@ For **Parts 1, 3, and 4** of this assignment, you can use the **DB Playground** 
 
 > **💡 Tip:** The playground validates your _results_, not the exact query you wrote. There are often multiple correct ways to write the same query — as long as your output matches the expected values, it passes.
 
-### Option B — Local SQLite
+#### Option B — Local SQLite
 
 If you prefer to work locally with the `sqlite3` CLI or DBeaver for SQLite, that works too. Submit a single `.sql` file with all your queries and comments, structured as shown in the [Submission](#submission) section.
 
 ---
 
-## Part 1: Aggregate Functions & Reporting
+### Part A: Aggregate Functions & Reporting
 
 Use aggregate functions (`COUNT`, `AVG`, `SUM`, `MIN`, `MAX`) and `GROUP BY` to answer the following business questions. Save each query in your `.sql` file.
 
@@ -52,9 +54,9 @@ Use aggregate functions (`COUNT`, `AVG`, `SUM`, `MIN`, `MAX`) and `GROUP BY` to 
 
 ---
 
-## Part 2: SQL Injection
+### Part B: SQL Injection
 
-### The Scenario
+#### The Scenario
 
 Imagine you are working on a **task management web app** for a small company. The app has a search feature: a manager types a colleague's name into a text box and sees all tasks assigned to that person.
 
@@ -75,7 +77,7 @@ Three weeks later, the company's entire task database is wiped. The attacker nev
 
 ---
 
-### 2a — Spot the Vulnerability
+#### 1. Spot the Vulnerability
 
 The function above builds a SQL query using **string concatenation** — it glues user input directly into the query string without any sanitisation.
 
@@ -84,7 +86,7 @@ The function above builds a SQL query using **string concatenation** — it glue
 
 > **💡 Key insight:** The attacker doesn't need to know anything about your database schema. They just need to find one input box that isn't protected — and then they can experiment. Once `' OR '1'='1` returns unexpected results, they know the door is open.
 
-### 2b — Fix the Vulnerability
+#### 2. Fix the Vulnerability
 
 The vulnerable function can be rewritten so that user input never gets concatenated directly into the query string. Research how database libraries handle this safely and rewrite `getTasksByUser` using the appropriate pattern.
 
@@ -94,11 +96,11 @@ Write your fixed version as a code comment in your `.sql` file.
 
 ---
 
-## Part 3: Transactions
+### Part C: Transactions
 
 Transactions ensure that a group of operations either **all succeed** or **all fail** — leaving the database in a consistent state. This is especially important for operations that touch multiple rows or tables.
 
-### Scenario
+#### Scenario
 
 A user is leaving the team and all their tasks need to be **reassigned to another user**. This involves two steps:
 
@@ -107,7 +109,7 @@ A user is leaving the team and all their tasks need to be **reassigned to anothe
 
 If step 2 fails, step 1 should be rolled back — you don't want tasks pointing to a non-existent user.
 
-### Tasks
+#### Tasks
 
 Write the following queries and save them in your `.sql` file:
 
@@ -125,9 +127,9 @@ Write the following queries and save them in your `.sql` file:
 
 ---
 
-## Part 4: Putting It All Together
+### Part D: Putting It All Together
 
-Combine everything from Parts 1–3 to solve the following real-world scenarios:
+Combine everything from Parts A–C to solve the following real-world scenarios:
 
 1. Write a transaction that:
    - Creates a new category called `"Urgent"`
@@ -145,7 +147,7 @@ Combine everything from Parts 1–3 to solve the following real-world scenarios:
 
 ---
 
-## Submission
+### Submission
 
 Submit your assignment as a **single `.sql` file** containing all your queries and explanations, clearly labeled with comments. This is the required format regardless of whether you used the Playground or worked locally — the Playground is a tool to help you write and validate your queries, but your final submission is always the `.sql` file.
 
@@ -159,17 +161,21 @@ Structure your file clearly with a comment header for each part and question:
 -- Student: Your Name
 -- ============================================================
 
--- Part 1, Question 1: ...your query here...
+-- Part A, Question 1: ...your query here...
 
--- Part 1, Question 2: ...your query here...
+-- Part A, Question 2: ...your query here...
 
--- Part 2a: ...your explanation and attack string as comments...
+-- Part B.1: ...your explanation and attack string as comments...
 
--- Part 2b: ...your fix as a code comment...
+-- Part B.2: ...your fix as a code comment...
 
--- Part 3, Question 1: ...your transaction here...
+-- Part C, Question 1: ...your transaction here...
 
 -- ... and so on
 ```
 
 > **💡 If you're stuck:** Ask on Slack, check the hints in the Playground, or re-read the Week 2 slides on GROUP BY and HAVING before reaching for the answer.
+
+## 2. Events Startup Project
+
+Continue progress on the [Events Startup Project](/courses/backend/events-startup-project/README.md). Check the [Weekly Plan](/courses/backend/events-startup-project/weekly-plan.md) for specific tasks to complete this week.

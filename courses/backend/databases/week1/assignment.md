@@ -1,9 +1,11 @@
 # Assignment
 
+## 1. Task Management Database
+
 In this assignment, you'll practice working with the task management database you created in the session.
 You will be inserting and updating data, writing queries, querying relationships, and finally modify the database schema to add new functionality.
 
-## Getting Started
+### Getting Started
 
 > [!TIP]
 > If problems arise, remember you can ask on Slack for help.
@@ -43,7 +45,7 @@ erDiagram
 
 You will use this database to complete the following assignment tasks.
 
-## Part 1: Basic CRUD Operations
+### Part 1: Basic CRUD Operations
 
 Write SQL queries to perform the following operations:
 
@@ -60,7 +62,7 @@ Write SQL queries to perform the following operations:
 
 For each operation, save your SQL query in a text file.
 
-## Part 2: Working with Relationships
+### Part 2: Working with Relationships
 
 Write SQL queries to answer the following questions:
 
@@ -68,7 +70,7 @@ Write SQL queries to answer the following questions:
 1. Find all tasks with a status of "Done"
 1. Find all overdue tasks (due_date is earlier than today)
 
-## Part 3: Modifying the Database Schema
+### Part 3: Modifying the Database Schema
 
 Now let's modify our database structure to add more functionality:
 
@@ -84,7 +86,7 @@ Now let's modify our database structure to add more functionality:
 5. Insert at least 3 categories
 6. Assign categories to at least 5 different tasks
 
-## Part 4: Advanced Queries
+### Part 4: Advanced Queries
 
 Now that you've enhanced the database, write queries to:
 
@@ -94,7 +96,7 @@ Now that you've enhanced the database, write queries to:
 4. Get all high priority tasks that are either "In Progress" or "To Do"
 5. Find users who have tasks in more than one category
 
-## Submission
+### Submission
 
 Submit your assignment as a single .sql file containing all your queries, clearly labeled with comments indicating which part and question each query addresses.
 
@@ -108,3 +110,7 @@ INSERT INTO user (name, email, phone) VALUES ('My Name', 'my_email@example.com',
 INSERT INTO task (title, description, created, updated, due_date, status_id)
 VALUES ('Learn SQL', 'Practice database queries', datetime('now'), datetime('now'), date('now', '+7 days'), 2);
 ```
+
+## 2. Events Startup Project
+
+Start progress on the [Events Startup Project](/courses/backend/events-startup-project/README.md). Check the [Weekly Plan](/courses/backend/events-startup-project/weekly-plan.md) for specific tasks to complete this week.
