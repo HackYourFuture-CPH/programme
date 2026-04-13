@@ -6,6 +6,25 @@ Here is a guideline of the outcomes you should reach each week to stay on track.
 Throughout all weeks, build reusable components where possible and style your components and the whole UI.
 The requirements in the [Requirements](./requirements.md) and this plan are the basis; you can always do more if you wish.
 
+**Styling**
+
+There is no predefined design or mockup — the UI is yours to design. This is intentional: making layout and visual decisions is part of the work.
+
+- **Weeks 1–3:** Use plain CSS. This builds the core skill before leaning on tooling.
+- **Week 4+:** Once you have covered component libraries in the React course, you are welcome to bring in a tool to speed up or replace hand-rolled CSS. Two common approaches:
+  - **Component library** — pre-built, styled UI components you drop in (e.g. [shadcn/ui](https://ui.shadcn.com), [MUI](https://mui.com), [Chakra UI](https://chakra-ui.com))
+  - **[Tailwind CSS](https://tailwindcss.com)** — a utility-first CSS framework. Instead of writing separate CSS files, you compose styles directly in JSX using small utility classes (e.g. `className="flex gap-4 text-sm font-bold"`). It gives you full control over the design without leaving your markup, and is widely used in production React projects.
+
+For inspiration and starting points:
+
+- Look at real ticketing sites (e.g. Eventbrite, Ticketmaster) for layout and UX patterns
+- [Dribbble](https://dribbble.com) or [Mobbin](https://mobbin.com) for UI design inspiration
+- [UX Patterns](https://uxpatterns.dev) for common UI/UX interaction patterns
+- [Coolors](https://coolors.co) for colour palettes
+- [Google Fonts](https://fonts.google.com) for typography
+
+Aim for visual consistency across pages from the start.
+
 ---
 
 ## Week 1 Sprint — Components & composition
