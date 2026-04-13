@@ -6,7 +6,7 @@ Here is a guideline of the outcomes you should reach each week to stay on track.
 Throughout all weeks, build reusable components where possible and style your components and the whole UI.
 The requirements in the [Requirements](./requirements.md) and this plan are the basis; you can always do more if you wish.
 
-**Styling**
+### Styling
 
 There is no predefined design or mockup — the UI is yours to design. This is intentional: making layout and visual decisions is part of the work.
 
