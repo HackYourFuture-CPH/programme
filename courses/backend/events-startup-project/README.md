@@ -55,5 +55,5 @@ Links to the following:
 - [ ] Database schema with ERD
 - [ ] Deployed API documentation
 - [ ] Deployed API service
-- [ ] Deployed database
+- [ ] Deployed PostgreSQL database
 - [ ] Postman collection
