@@ -1,5 +1,7 @@
 # Assignment
 
+## 1. Node tasks
+
 In this assignment, you will extend the **Snippets API** to support multiple authentication mechanisms and reflect on their trade-offs.
 
 You will:
@@ -9,7 +11,7 @@ You will:
 - Deepen either your JWT or session-based authentication (or both, if you have time).
 - Add a simple API-key-protected machine-style endpoint.
 
-## Setup
+### Setup
 
 1. Go to/create a `node/week3` directory in your `hyf-assignment` repo.
 2. Copy or link your existing Snippets API code from week 2, so that you have:
@@ -23,9 +25,7 @@ You will:
 
 > If you are missing any of these pieces, revisit the week 3 session materials and implement the in-class steps first before moving on.
 
----
-
-## Part 1 – Solidify in-class implementation
+### Part A – Solidify in-class implementation
 
 Start from the state of your Snippets API at the end of the week 3 session.
 
@@ -34,7 +34,7 @@ Your goals:
 - Make sure the secure `/login` endpoint using bcrypt is correctly implemented.
 - Make sure at least one auth mechanism (JWT or sessions) from the session is working reliably.
 
-### Requirements
+#### Requirements
 
 - Verify that:
   - `users` table exists and contains at least one user with a hashed password.
@@ -55,13 +55,11 @@ Your goals:
 
 Document briefly (e.g. in comments or a short `AUTH_NOTES.md`) which auth mechanism you have working at this stage.
 
----
-
-## Part 2 – Database-stored tokens
+### Part B – Database-stored tokens
 
 Next, add **database-stored tokens** to your Snippets API, in addition to your existing mechanism.
 
-### Requirements for database stored tokens excercise
+#### Requirements for database stored tokens excercise
 
 1. Create a `tokens` table with at least:
    - `id` (primary key)
@@ -85,9 +83,7 @@ Next, add **database-stored tokens** to your Snippets API, in addition to your e
 5. Implement a `/logout-token` route that:
    - Deletes or invalidates the token record from the `tokens` table.
 
----
-
-## Part 3 – Authorisation using JWT
+### Part C – Authorisation using JWT
 
 Read thoroughly the following article on [implementing authorisation using JWT and Express](https://dev.to/cerbos/authentication-and-authorization-in-nodejs-applications-12fk) or find other resources online.
 
@@ -99,20 +95,18 @@ Extend your implementation by:
   - all logged in users can post snippets
   - **some** logged in users can delete snippets
 
-### Requirements for JWT authorisation excercise
+#### Requirements for JWT authorisation excercise
 
 - Clearly document (in code comments or `AUTH_NOTES.md`) how to:
   - Obtain credentials and log in.
   - Use the improved mechanism (which headers/cookies are expected).
   - Log out or otherwise invalidate access.
 
----
-
-## Part 4 – Optional: API-key-protected machine endpoint
+### Part D – Optional: API-key-protected machine endpoint
 
 Finally, add a simple **API-key-protected endpoint** intended for machine-to-machine use.
 
-### Requirements for API-key excercise
+#### Requirements for API-key excercise
 
 1. Choose or create a route that makes sense for a machine client, for example:
    - `GET /api/metrics`
@@ -129,9 +123,7 @@ Finally, add a simple **API-key-protected endpoint** intended for machine-to-mac
 
 If you have time, add a very simple in-memory rate-limiting mechanism (for example, per API key) and document the limitations of such an approach.
 
----
-
-## Reflection
+### Reflection
 
 Add a short reflection section to your repository (for example in `AUTH_NOTES.md`) where you answer the following questions in a few sentences or bullet points each:
 
@@ -141,3 +133,7 @@ Add a short reflection section to your repository (for example in `AUTH_NOTES.md
    - An internal admin tool used by a small team?
 2. Why would you **not** use the other mechanisms in those scenarios?
 3. What is one security improvement you would like to make next if you had more time?
+
+## 2. Events Startup Project
+
+Continue progress on the [Events Startup Project](/courses/backend/events-startup-project/README.md). Check the [Weekly Plan](/courses/backend/events-startup-project/weekly-plan.md) for specific tasks to complete this week.

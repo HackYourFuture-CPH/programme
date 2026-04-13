@@ -1,5 +1,7 @@
 # Assignment
 
+## 1. Node tasks
+
 In this assignment you will continue working with the **Snippets API**. Your focus is to design and harden a small set of endpoints by:
 
 - Demonstrating and fixing a SQL injection vulnerability.
@@ -8,7 +10,7 @@ In this assignment you will continue working with the **Snippets API**. Your foc
 - Describing your API with OpenAPI/Swagger.
 - Exercising it with advanced Postman collections and tests.
 
-## Setup
+### Setup
 
 1. Go to/create a `node/week2` directory in your `hyf-assignment` repo.
 2. Reuse your Snippets backend from Week 1 (or create a fresh copy of it).
@@ -43,9 +45,7 @@ snippetsRouter.get("/", async (req, res) => {
 
 > You may adapt table/column names to match your own schema, but keep the overall pattern.
 
-## The tasks
-
-### Task 1 – Demonstrate and fix SQL injection
+### Part A – Demonstrate and fix SQL injection
 
 The current implementation of the `sort` query parameter is vulnerable to SQL injection.
 
@@ -65,7 +65,7 @@ The current implementation of the `sort` query parameter is vulnerable to SQL in
 
 Update your logs to show the safe SQL after your fix, and include a short explanation in your PR describing your approach.
 
-### Task 2 – Extend the Snippets API
+### Part B – Extend the Snippets API
 
 Design and implement at least **two new endpoints** for the Snippets API. Some ideas:
 
@@ -80,7 +80,7 @@ For each new endpoint:
 3. Use appropriate status codes (e.g. `200`, `201`, `400`, `404`, `500`).
 4. Return consistent JSON data and error shapes, following the error-handling rules from Week 1.
 
-### Task 3 – Error handling and validation
+### Part C – Error handling and validation
 
 Update your existing and new endpoints with robust error handling and validation. At minimum:
 
@@ -96,7 +96,7 @@ Update your existing and new endpoints with robust error handling and validation
 4. Avoid sending internal details (SQL statements, stack traces) to the client.
 5. Log enough information on the server to debug issues (errors and relevant context).
 
-### Task 4 – Document your API with OpenAPI/Swagger
+### Part D – Document your API with OpenAPI/Swagger
 
 Create a minimal OpenAPI description for the core Snippets endpoints you now have. You can:
 
@@ -112,7 +112,7 @@ For each, include:
 
 Include this file in your PR.
 
-### Task 5 – Advanced Postman collection and tests
+### Part E – Advanced Postman collection and tests
 
 Use Postman to capture and test your API:
 
@@ -131,7 +131,7 @@ Use Postman to capture and test your API:
    - Export the collection (and environment if used) and attach it to your PR, **or** share a link to the collection if you use Postman Cloud.
    - Include a screenshot or link to a collection run showing your tests passing.
 
-## Week 2 assignment objective
+### Week 2 assignment objective
 
 After finish all the tasks, make sure (and fill in the gaps where needed) that your **entire Snippets API** is:
 
@@ -139,3 +139,7 @@ After finish all the tasks, make sure (and fill in the gaps where needed) that y
 2. Viewable in Swagger
 3. Callable in Postman
 4. Validated where applicable
+
+## 2. Events Startup Project
+
+Continue progress on the [Events Startup Project](/courses/backend/events-startup-project/README.md). Check the [Weekly Plan](/courses/backend/events-startup-project/weekly-plan.md) for specific tasks to complete this week.

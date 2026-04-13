@@ -1,4 +1,4 @@
-# Weekly Plan – Backend Project
+# Weekly Plan
 
 This document outlines the expected weekly progress and milestones for completing the backend project.
 The structure aligns with the Product Requirements Document (PRD), Shared API Contract, and Technical Specification.
@@ -177,18 +177,3 @@ Complete private API, implement checkout transaction, and deploy.
 - Swagger/OpenAPI docs accurately reflect the implemented API
 - API + DB deployed
 - Postman collection complete
-
----
-
-## Final Deliverables
-
-By the end of Week 5, you must provide:
-
-- [ ] GitHub repository
-- [ ] ERD documentation
-- [ ] Deployed PostgreSQL database
-- [ ] Deployed API service (including working Swagger UI from the provided skeleton)
-- [ ] Swagger/OpenAPI documentation updated to match your implementation
-- [ ] Postman collection covering core flows
-
----

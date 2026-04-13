@@ -2,9 +2,9 @@
 
 Here is a guideline of the outcomes you should reach each week to stay on track.
 
-**How this plan works:** Each week's tasks are aligned with that week's [React](/courses/frontend/react/README.md) learning goals and session content, and move the [PRD](../product-requirements-document.md) forward in small steps. Scope is sized so it fits alongside other course assignments.
+**How this plan works:** Each week's tasks are aligned with that week's [React](/courses/frontend/react/README.md) learning goals and session content, and move the [Requirements](./requirements.md) forward in small steps. Scope is sized so it fits alongside other course assignments.
 Throughout all weeks, build reusable components where possible and style your components and the whole UI.
-The requirements in the [PRD](../product-requirements-document.md) and this plan are the basis; you can always do more if you wish.
+The requirements in the [Requirements](./requirements.md) and this plan are the basis; you can always do more if you wish.
 
 ---
 
@@ -63,7 +63,7 @@ The requirements in the [PRD](../product-requirements-document.md) and this plan
 
 **Goal:** Introduce cart and session via Context, define routes, and make the app auth-aware.
 
-**React focus:** React Context, React Router. [Frontend spec](../frontend/technical-specification.md) requires Router + Context for cart and user session.
+**React focus:** React Context, React Router. [Requirements](./requirements.md) requires Router + Context for cart and user session.
 
 **PRD / spec:** Cart and user session in Context; distinct routes; auth-aware behaviour.
 
