@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Monster Arena</title>
+  </head>
+  <body>
+    <header>
+      <h1>⚔️ Monster Arena</h1>
+      <p id="bout-label" aria-live="polite">
+        Waiting for the tournament to start...
+      </p>
+      <button id="header-restart-btn" aria-label="Restart tournament" hidden>
+        Restart
+      </button>
+    </header>
+
+    <main class="arena">
+      <div id="vs-overlay" aria-hidden="true">
+        <div id="vs-content">
+          <span id="vs-name-left"></span>
+          <span id="vs-text">VS</span>
+          <span id="vs-name-right"></span>
+        </div>
+      </div>
+      <!-- Left fighter -->
+      <div class="fighter" id="fighter-left">
+        <div class="monster-img-wrap">
+          <!-- alt is set programmatically by ui.js when the bout starts -->
+          <img class="monster-img" id="img-left" src="" alt="" />
+        </div>
+        <h2 class="monster-name" id="name-left">—</h2>
+        <div class="health-bar-wrap">
+          <div class="health-bar" id="bar-left"></div>
+        </div>
+        <span class="hp-label" id="hp-left"></span>
+      </div>
+
+      <!-- Battle log -->
+      <div class="log-wrap">
+        <ul
+          class="log"
+          id="log"
+          aria-live="polite"
+          aria-label="Battle log"
+        ></ul>
+      </div>
+
+      <!-- Right fighter -->
+      <div class="fighter" id="fighter-right">
+        <div class="monster-img-wrap">
+          <!-- alt is set programmatically by ui.js when the bout starts -->
+          <img class="monster-img" id="img-right" src="" alt="" />
+        </div>
+        <h2 class="monster-name" id="name-right">—</h2>
+        <div class="health-bar-wrap">
+          <div class="health-bar" id="bar-right"></div>
+        </div>
+        <span class="hp-label" id="hp-right"></span>
+      </div>
+    </main>
+
+    <!-- Leaderboard overlay -->
+    <div class="leaderboard-overlay" id="leaderboard" aria-hidden="true">
+      <div class="leaderboard-card" style="position: relative">
+        <h2>Final Standings</h2>
+        <button
+          id="leaderboard-close"
+          aria-label="Close leaderboard"
+          style="
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            color: var(--muted);
+            font-size: 1.4rem;
+            cursor: pointer;
+          "
+        >
+          ✕
+        </button>
+        <ol id="leaderboard-list"></ol>
+        <div id="montecarlo-panel">
+          <p id="montecarlo-label"></p>
+          <ul id="montecarlo-list"></ul>
+        </div>
+        <button id="restart-btn">Play Again</button>
+      </div>
+    </div>
+
+    <!-- Start screen -->
+    <div
+      id="start-screen"
+      aria-modal="true"
+      role="dialog"
+      aria-label="Monster Arena start screen"
+    >
+      <div id="start-card">
+        <p id="start-subtitle">Round Robin Tournament</p>
+        <h2 id="start-title">Monster<br />Arena</h2>
+        <ul id="start-roster"></ul>
+        <button id="start-btn">Press Start</button>
+      </div>
+    </div>
+
+    <!-- Round Robin Results Matrix -->
+    <section id="round-robin" aria-label="Round Robin Results">
+      <h3 id="rr-title">Round Robin</h3>
+      <div id="rr-table-wrap">
+        <table id="rr-table" aria-live="polite"></table>
+      </div>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

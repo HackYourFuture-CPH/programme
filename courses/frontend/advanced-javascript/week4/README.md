@@ -18,8 +18,16 @@ By the end of this session, you will be able to:
   - [ ] Instantiate objects from classes using `new`
   - [ ] Use Methods and constructors
   - [ ] Use Static methods
-  - [ ] Use inheritance with `extends` and `super()`
   - [ ] Understand the difference between classes vs objects
+- [ ] Use **inheritance** and **composition** to share behavior between classes
+  - [ ] Use inheritance with `extends` and `super()`
+  - [ ] Recognize when inheritance is a good fit ("is-a" relationship)
+  - [ ] Use composition ("has-a") as an alternative to inheritance
+- [ ] _(optional)_ Recognise common **design patterns** and when to apply them
+  - [ ] Strategy — swap behavior by passing in a different object
+  - [ ] Factory — hide object creation complexity behind a function
+  - [ ] Observer — notify listeners when state changes
+  - [ ] Singleton — ensure only one instance of a class exists
 
 ```js
 class Comment {
