@@ -1,28 +1,63 @@
 # Session Plan
 
-> [!TIP]
-> The session plan is written to guide the mentor to prepare and run the session. Of course, trainees may come across and read this material. But it should be written as if you're speaking to a mentor.
+- Introduction & Context (20 mins)
+  - What performance testing is and why it matters
+  - Business impact of poor performance
+  - QA’s role as the first line of defense
+- Performance Fundamentals (30 mins)
+  - What performance means (response time, error rate, throughput)
+  - Industry standards and expectations
+  - Availability and downtime impact
+  - Throughput vs number of users
+- Performance Across the SDLC (25 mins)
+  - Performance mindset: shift left
+  - Responsibilities in each SDLC phase:
+    - Requirements
+    - Design
+    - Development
+    - Testing
+    - Production
+  - Performance success model
+- Stages of Performance Testing (25 mins)
+  - Planning
+  - Preparation
+  - Scripting
+  - Execution
+  - Analysis
+  - Reporting
+  - Typical deliverables of a performance engagement
+- Backend Performance Testing with k6 (Hands‑On) (40 mins)
+  - What k6 is and why it’s used
+  - Key k6 concepts (VUs, stages, checks, thresholds)
+  - Writing k6 scripts in VS Code
+  - Running:
+    - Single‑user tests
+    - Load tests
+    - Stress tests
+  - Reading metrics and results
+  - PASS / FAIL against SLAs
+- Frontend Performance Testing with Google Lighthouse (20 mins)
+  - What Lighthouse is
+  - Why frontend performance matters
+  - Lighthouse audit categories
+  - Core Web Vitals (FCP, LCP, TBT, CLS, Speed Index)
+  - Desktop vs Mobile differences
+- Lighthouse Hands‑On Exercises (25 mins)
+  - Running Lighthouse from Chrome DevTools
+  - Reading the report (Metrics, Opportunities, Diagnostics)
+  - Mobile vs Desktop analysis
+  - Running Lighthouse from CLI
+  - Using Lighthouse as a performance budget gate
+- Reporting & Decision Making (15 mins)
+  - Correlating frontend and backend findings
+  - Identifying risks, bottlenecks, hot spots
+  - Communicating results to stakeholders
+  - Go / No Go mindset
+- Wrap‑Up & Next Steps (10 mins)
+  - Key takeaways
+  - Performance as continuous practice
+  - How to apply in real projects
 
 ## Session Materials
 
-> [!TIP]
-> Previously used slides, docs or any other materials that future mentors could get value from should be listed here. If we don't have any (yet), this section can be removed.
-
-These are some examples of previously created materials by mentors that you can use yourself, or for inspiration.
-
-- [`Resource Name`, `@author`, `Team X`](https://example.com/)
-
-## Session Outline
-
-> [!TIP]
-> Write a plan for the order of topics, points to cover, examples, timings, exercises and any other useful info to guide the session.
-
-## Exercises
-
-> [!TIP]
-> Exercises might appear inside the Session Outline section if they are tightly integrated into the flow of the session. If you have more like a library of exercises that should be worked through in order, then you could also list them in a separate section here.
-
-## Optional Exercises
-
-> [!TIP]
-> If you have some extra exercises that trainees can complete if they finish the rest, or want to push themselves, include them in this optional section.
+In this session, you will learn the fundamentals of front-end performance testing and how modern tools like Google Lighthouse help QA teams ensure quality. We will cover key performance metrics, run Lighthouse audits, interpret reports, and explore automation options using Lighthouse CLI or Node module.
