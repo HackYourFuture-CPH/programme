@@ -19,9 +19,7 @@ Design and implement the foundational database schema for users and catalog enti
 - [ ] Design ERD (v1) including:
   - `user`
   - `{domain}_item` (e.g. `event`)
-
-     NOTE: If you use singular table names, avoid reserved SQL words by choosing clearer names such as `app_user` instead of `user`
-
+- [ ] Naming hint: if you use singular table names, avoid reserved SQL words by choosing clearer names such as `app_user` instead of `user`
 - [ ] Implement PostgreSQL schema with:
   - Primary keys
   - Foreign keys (where applicable)
@@ -65,9 +63,7 @@ Finalize database structure to support cart, checkout, and order flows.
 - [ ] Choose a cart-line key strategy:
   - Project default: a simple single primary key such as `cartLineId`
   - Alternative design: a composite key such as (`cartId`, `lineNo`)
-
-    NOTE: If you choose the alternative composite-key design, make sure your later endpoint design reflects it clearly
-
+- [ ] Design note: if you choose the alternative composite-key design, make sure your later endpoint design reflects it clearly
 - [ ] Implement SQL queries for:
   - Paginated item listing (`LIMIT`, sorting)
   - Cart subtotal calculation
@@ -143,11 +139,9 @@ Implement authentication and protected cart functionality.
   - `GET /api/cart`
   - `POST /api/cart/items`
   - `PUT /api/cart/items/{itemId}`
-
-      Treat `{itemId}` as the cart line identifier, not the catalog item identifier
-      *Project default*: use the simple cart-line design with a single cart line id in routes such as `PUT /api/cart/items/{itemId}`
-      *Design note*: if you intentionally choose the composite-key alternative from Week 2, your routes would typically become more explicit, for example `/api/carts/{cartId}/lines/{lineNo}`
-
+- [ ] Treat `{itemId}` as the cart line identifier, not the catalog item identifier
+- [ ] Project default: use the simple cart-line design with a single cart line id in routes such as `PUT /api/cart/items/{itemId}`
+- [ ] Design note: if you intentionally choose the composite-key alternative from Week 2, your routes would typically become more explicit, for example `/api/carts/{cartId}/lines/{lineNo}`
 - [ ] Support cart behavior for both guest and authenticated users using the backend-persisted cart model chosen in Week 2
 - [ ] Validate request payloads
 - [ ] Ensure consistent error responses
