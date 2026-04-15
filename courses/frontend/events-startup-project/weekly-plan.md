@@ -35,11 +35,11 @@ Aim for visual consistency across pages from the start.
 
 **PRD / spec:** Lay the structure for event list and event detail; no shared state or routing yet.
 
-- [ ] **Event list structure:** Look into the existing EventList component, split it into smaller components (e.g. `EventCard`) in their own files. Keep the list working as it is. Use mock or hardcoded event data (no fetch yet).
+- [ ] **Event list structure:** Look into the existing `EventList` component and create an `EventCard` component in its own file that shows the layout for one hardcoded event. The goal is practising file-splitting and JSX composition — wiring it up to the full list with props and `.map()` comes in Week 2. For now, you will have `EventList` as is and a newly created `EventCard` that is ready to integrate in week 2. If you already read up about props, feel free to try to wire it up already.
 - [ ] **Event detail page:** Add a dedicated event detail view (new component) that shows date, time, venue, and description for one event. Focus on layout and composition, not yet on routing.
 - [ ] **Layout/nav:** Ensure you have a clear layout (e.g. header/nav, main content, footer) so adding cart, auth, or other elements later is straightforward.
 
-**Outcome:** A composed event list (e.g. EventCard, EventList), a dedicated event detail view, and a clear layout ready for cart, auth, and navigation.
+**Outcome:** An `EventCard` component displaying one event's data written directly in JSX (no props yet), a dedicated event detail view, and a clear layout ready for cart, auth, and navigation.
 
 ---
 
@@ -51,12 +51,13 @@ Aim for visual consistency across pages from the start.
 
 **PRD / spec:** Ticket availability and pricing on the UI; no cart, no Context yet.
 
+- [ ] **Wire up EventCard:** Update `EventList` to render `EventCard` using `.map()` — pass each event's data as props so the list renders dynamically from your mock data array.
 - [ ] **Ticket quantity & pricing display:** Show ticket availability and pricing on the event list and/or event detail using mock data (e.g. add price and availability fields to your mock events). Use conditional UI (e.g. "sold out" vs "X tickets left", price display).
 - [ ] **Interactive detail state:** Add local state on event detail (e.g. quantity selector, expanded section, or tab) so you practice `useState` and controlled inputs. No cart or persistence yet.
 - [ ] **Lifting state — list sort or filter:** Implement sort order and/or filter for the event list so that you must **lift state**: keep the sort/filter value (e.g. `sortBy`, `filterQuery`) in a parent component that renders both the control (e.g. in header or above the list) and the event list. Pass the state and setter down as props so both the control and the list react to the same state.
 - [ ] **Conditional list UI:** Use conditional rendering for the list (e.g. empty state when there are no events or no matches).
 
-**Outcome:** Ticket availability and pricing visible on list and/or detail; conditional UI for sold out/available; at least one interactive element using local state; sort or filter implemented with state lifted to a common parent and passed via props.
+**Outcome:** `EventList` fully wired with `EventCard` via props and `.map()`; ticket availability and pricing visible on list and/or detail; conditional UI for sold out/available; at least one interactive element using local state; sort or filter implemented with state lifted to a common parent and passed via props.
 
 ---
 
