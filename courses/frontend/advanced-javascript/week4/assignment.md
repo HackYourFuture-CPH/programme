@@ -9,7 +9,7 @@ We use [Rapid API](https://rapidapi.com/apishub/api/website-screenshot6/?utm_sou
 ## Technical specifications
 
 1. User can enter a URL for a website and it will send back a screenshot of the website using the website-screenshot API
-2. User can hit a button to save the screenshot. It will then save the screenshot URL as a resource on crudcrud
+2. User can hit a button to save the screenshot. It will then save the screenshot and the URL as a resource on crudcrud
 3. User can get a list of all screenshots that they have saved
 4. User can delete a screenshot that they have saved
 
@@ -31,12 +31,12 @@ For the error system, think about what kinds of errors can happen in your app �
 
 Sign up at [RapidAPI](https://rapidapi.com) and subscribe to the **website-screenshot6** API (free tier is enough). You will get an API key.
 
-The API takes a website URL and returns the screenshot as **binary image data** — not JSON, not a string. See the next section for how to handle that.
+The API takes a website URL and returns **JSON** with a `screenshotUrl` field — a direct link to the generated image you can use in an `<img>` tag.
 
 ```js
 async function fetchScreenshot(websiteUrl) {
   const response = await fetch(
-    `https://website-screenshot6.p.rapidapi.com/?url=${encodeURIComponent(websiteUrl)}`,
+    `https://website-screenshot6.p.rapidapi.com/screenshot?url=${encodeURIComponent(websiteUrl)}&width=1920&height=1080`,
     {
       method: "GET",
       headers: {
@@ -50,48 +50,13 @@ async function fetchScreenshot(websiteUrl) {
     throw new Error(`Screenshot API error: ${response.status}`);
   }
 
-  // The response body is binary image data — read it as a Blob
-  const blob = await response.blob();
-  return blob;
+  // The response is JSON: { screenshotUrl: "https://..." }
+  const data = await response.json();
+  return data.screenshotUrl;
 }
 ```
 
 > **Keep your API key out of git.** Put it in a `secret.js` file and add that file to `.gitignore`.
-
----
-
-### Working with Blobs
-
-A **Blob** (Binary Large Object) is how the browser represents raw binary data — like an image file that came from a network response. It is not a string and you cannot display it directly in an `<img>` tag.
-
-To display a Blob as an image, use `URL.createObjectURL()`. This creates a temporary URL that points to the Blob in memory:
-
-```js
-const blob = await fetchScreenshot("https://example.com");
-
-// Create a temporary URL for the blob
-const imageUrl = URL.createObjectURL(blob);
-
-// Now you can use it as an img src
-const img = document.createElement("img");
-img.src = imageUrl;
-document.body.appendChild(img);
-```
-
-The URL looks like `blob:http://localhost:3000/some-uuid` — it only lives as long as the page is open. That's fine for displaying images on screen.
-
-**Can you store a Blob in crudcrud?** No — crudcrud only stores JSON (plain text/numbers/objects). Blobs are binary data and cannot go into JSON directly.
-
-The practical solution: **store the original website URL in crudcrud, not the image itself.** When you later load saved screenshots, call the screenshot API again with that URL to regenerate the image. This keeps your stored data small and simple.
-
-```js
-// What you save in crudcrud — just the URL string
-{
-  websiteUrl: "https://example.com";
-}
-
-// When loading saved items, call fetchScreenshot(item.websiteUrl) again
-```
 
 ---
 
@@ -103,7 +68,7 @@ The practical solution: **store the original website URL in crudcrud, not the im
 https://crudcrud.com/api/YOUR_UNIQUE_ID
 ```
 
-You can create any resource name you like after it, for example `/screenshots`. crudcrud gives you four operations:
+You can create any resource name you like after it, for example `/screenshots`. For this app you need three operations:
 
 | What you want to do       | Method   | URL                   |
 | ------------------------- | -------- | --------------------- |
@@ -116,13 +81,13 @@ crudcrud automatically assigns an `_id` field to each item you POST. You will ne
 #### Save a screenshot
 
 ```js
-async function saveScreenshot(websiteUrl) {
+async function saveScreenshot(websiteUrl, screenshotUrl) {
   const response = await fetch(
     "https://crudcrud.com/api/YOUR_UNIQUE_ID/screenshots",
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ websiteUrl }),
+      body: JSON.stringify({ websiteUrl, screenshotUrl }),
     },
   );
 
@@ -132,7 +97,7 @@ async function saveScreenshot(websiteUrl) {
 
   // crudcrud returns the saved object with its _id
   const saved = await response.json();
-  return saved; // { _id: "abc123", websiteUrl: "https://example.com" }
+  return saved; // { _id: "abc123", websiteUrl: "https://example.com", screenshotUrl: "https://..." }
 }
 ```
 
@@ -149,7 +114,7 @@ async function loadScreenshots() {
   }
 
   const items = await response.json();
-  return items; // Array of { _id, websiteUrl }
+  return items; // Array of { _id, websiteUrl, screenshotUrl }
 }
 ```
 
@@ -190,7 +155,7 @@ class UIComponent {
 }
 ```
 
-A `Screenshot` class is a natural fit here — it holds the website URL and its crudcrud `_id`, and it knows how to display itself. Think about:
+A `Screenshot` class is a natural fit here — it holds the website URL, the screenshot image URL, and its crudcrud `_id`, and it knows how to display itself. Think about:
 
 - What data does it need? (constructor)
 - What does its card look like? (render)
@@ -198,14 +163,16 @@ A `Screenshot` class is a natural fit here — it holds the website URL and its 
 
 ```js
 class Screenshot extends UIComponent {
-  constructor(websiteUrl, id) {
+  constructor(websiteUrl, screenshotUrl, id) {
     super();
     this.websiteUrl = websiteUrl;
+    this.screenshotUrl = screenshotUrl; // direct image URL from the API
     this.id = id; // _id from crudcrud — needed to delete later
   }
 
   render() {
     // create this.element if it doesn't exist yet, then build the HTML
+    // use this.screenshotUrl directly as the <img> src
     // return this.element so the caller can append it to the page
   }
 
@@ -215,7 +182,11 @@ class Screenshot extends UIComponent {
 }
 
 // Usage
-const card = new Screenshot("https://example.com", "abc123");
+const card = new Screenshot(
+  "https://example.com",
+  "https://storage.linebot.site/...",
+  "abc123",
+);
 document.getElementById("screenshots-list").appendChild(card.render());
 ```
 
@@ -264,8 +235,8 @@ async function handleGenerateScreenshot(websiteUrl) {
       throw new ValidationError("URL cannot be empty");
     }
 
-    const blob = await fetchScreenshot(websiteUrl);
-    // ... display the screenshot
+    const screenshotUrl = await fetchScreenshot(websiteUrl);
+    // ... display the screenshot using screenshotUrl as <img> src
   } catch (error) {
     if (error instanceof ValidationError) {
       // User made a mistake — show a friendly message next to the input
