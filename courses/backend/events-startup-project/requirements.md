@@ -63,26 +63,12 @@ You should use the technologies, skills, tools, and stack you've learned through
 
 We already have a very basic API in place, but it is missing many features that you will be required to implement. You can find the current API in the project template.
 
+- [ ] API routes must be documented with Swagger / OpenAPI
+- [ ] A Postman collection must be included for the implemented API
+
 ## Implementation Clarifications
 
 These clarifications define the minimum expectations for this project. They are intended to remove ambiguity while still leaving room for implementation choices.
-
-### Scope and MVP
-
-- The required backend MVP includes:
-  - Public event listing
-  - Event search and pagination
-  - Single event details
-  - Authentication
-  - Cart retrieval and modification
-  - Checkout
-  - Order history endpoints (`list` and `get by id`)
-  - Swagger/OpenAPI documentation
-  - Postman collection
-- The following are optional and should be treated as stretch work:
-  - Admin endpoints such as full event CRUD
-  - Inventory or overselling logic
-  - Additional reporting or admin dashboards
 
 ### Naming Guidance
 
