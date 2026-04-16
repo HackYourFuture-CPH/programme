@@ -109,7 +109,7 @@ These clarifications define the minimum expectations for this project. They are 
 - A simple schema approach is to allow `cart.user_id` to be nullable until the cart is associated with a logged-in user.
 - The project should enforce the rule that each authenticated user has at most one active cart.
 - A database-level approach such as a unique constraint or partial unique index is recommended where supported by the chosen schema design.
-- Students are not required to implement advanced race-condition handling beyond a reasonable database-backed solution for this course project.
+- Trainees are not required to implement advanced race-condition handling beyond a reasonable database-backed solution for this course project.
 - Ticket inventory is intentionally treated as unlimited in this backend project.
 - Because inventory is unlimited, stock validation and overselling prevention are not required.
 - During checkout, the minimum required atomic behavior is converting the active cart into an order and preventing further modification of that finalized order.
