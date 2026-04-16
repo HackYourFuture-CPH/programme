@@ -99,7 +99,7 @@ These clarifications define the minimum expectations for this project. They are 
 - A separate `/search` route is not required.
 - `PUT /api/cart/items/{itemId}` and `DELETE /api/cart/items/{itemId}` should identify a specific cart line, not the event itself.
 - In the default project route design, `{itemId}` is a single cart line identifier.
-- If a student intentionally chooses a composite-key cart-line design, the route shape should be adjusted accordingly and documented clearly.
+- If a trainee intentionally chooses a composite-key cart-line design, the route shape should be adjusted accordingly and documented clearly.
 - The cart line should store a reference to the related event.
 
 ### Cart and Checkout Simplifications
