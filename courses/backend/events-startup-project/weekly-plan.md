@@ -1,9 +1,9 @@
 # Weekly Plan
 
 This document outlines the expected weekly progress and milestones for completing the backend project.
-The structure aligns with the Product Requirements Document (PRD), Shared API Contract, and Technical Specification.
+The structure aligns with the Requirements document and the minimum API expectations documented in this project folder.
 
-The goal is to progressively implement a fully functional, contract-compliant API with proper documentation, testing, and deployment.
+The goal is to progressively implement a fully functional backend API with proper documentation, testing, and deployment.
 
 ---
 
@@ -19,10 +19,12 @@ Design and implement the foundational database schema for users and catalog enti
 - [ ] Design ERD (v1) including:
   - `user`
   - `{domain}_item` (e.g. `event`)
+- [ ] Naming hint: if you use singular table names, avoid reserved SQL words by choosing clearer names such as `app_user` instead of `user`
 - [ ] Implement PostgreSQL schema with:
   - Primary keys
   - Foreign keys (where applicable)
   - Proper constraints
+- [ ] Start planning which relationships are required and which foreign keys may need to be optional, for example a cart that can exist before it is bound to a user
 - [ ] Add seed data for:
   - At least 1 test user
   - Multiple catalog items
@@ -53,14 +55,22 @@ Finalize database structure to support cart, checkout, and order flows.
   - `cart_item`
   - `order`
   - `order_item`
+- [ ] Continue to avoid reserved SQL words in the schema, for example by using names such as `customer_order` instead of `order`
 - [ ] Implement all foreign key relationships
-- [ ] Enforce “one active cart per user” rule
+- [ ] Design the cart so it can be persisted for both authenticated and unauthenticated users
+- [ ] Decide which foreign keys and columns are required versus optional, for example whether `cart.user_id` is nullable until a cart is attached to an authenticated user
+- [ ] Enforce “one active cart per authenticated user” rule
+- [ ] Choose a cart-line key strategy:
+  - Project default: a simple single primary key such as `cartLineId`
+  - Alternative design: a composite key such as (`cartId`, `lineNo`)
+- [ ] Design note: if you choose the alternative composite-key design, make sure your later endpoint design reflects it clearly
 - [ ] Implement SQL queries for:
   - Paginated item listing (`LIMIT`, sorting)
   - Cart subtotal calculation
   - Order totals snapshot logic
 - [ ] Update ERD (v2)
 - [ ] Add seed updates if needed
+- [ ] Decide how the schema enforces one active cart per authenticated user
 
 ### Week 2 Outcome
 
@@ -81,9 +91,9 @@ Expose public catalog endpoints and implement initial API documentation.
 - [ ] Set up Express application structure
 - [ ] Connect application to PostgreSQL
 - [ ] Implement public endpoints:
-  - `GET /api/{domain}` (paginated)
-  - `GET /api/{domain}/search`
-  - `GET /api/{domain}/{id}`
+  - `GET /api/events` (paginated)
+  - `GET /api/events/{id}`
+- [ ] Support search through query parameters on `GET /api/events` (for example `?q=music&page=1&pageSize=20`)
 - [ ] Implement pagination response format:
 
 ```json
@@ -129,6 +139,10 @@ Implement authentication and protected cart functionality.
   - `GET /api/cart`
   - `POST /api/cart/items`
   - `PUT /api/cart/items/{itemId}`
+- [ ] Treat `{itemId}` as the cart line identifier, not the catalog item identifier
+- [ ] Project default: use the simple cart-line design with a single cart line id in routes such as `PUT /api/cart/items/{itemId}`
+- [ ] Design note: if you intentionally choose the composite-key alternative from Week 2, your routes would typically become more explicit, for example `/api/carts/{cartId}/lines/{lineNo}`
+- [ ] Support cart behavior for both guest and authenticated users using the backend-persisted cart model chosen in Week 2
 - [ ] Validate request payloads
 - [ ] Ensure consistent error responses
 - [ ] Update Swagger documentation
@@ -154,6 +168,7 @@ Complete private API, implement checkout transaction, and deploy.
 - [ ] Implement remaining cart endpoints:
   - `DELETE /api/cart/items/{itemId}`
   - `POST /api/cart/checkout` (transactional)
+- [ ] Keep route design consistent with your cart-line key choice from Week 2
 - [ ] Implement order endpoints:
   - `GET /api/orders`
   - `GET /api/orders/{orderId}`
@@ -161,6 +176,7 @@ Complete private API, implement checkout transaction, and deploy.
   - Converting active cart → order
   - Creating order items
   - Clearing/replacing active cart
+- [ ] Keep checkout logic simple: inventory is treated as unlimited for this project
 - [ ] Finalize error handling across all routes
 - [ ] Complete Swagger documentation
 - [ ] Finalize Postman collection
@@ -171,7 +187,7 @@ Complete private API, implement checkout transaction, and deploy.
 
 ### Week 5 Outcome
 
-- Fully functional contract-compliant backend
+- Fully functional backend covering the minimum required project scope
 - Checkout flow transactional and stable
 - Orders history available
 - Swagger/OpenAPI docs accurately reflect the implemented API
