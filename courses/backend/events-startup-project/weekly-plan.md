@@ -1,7 +1,7 @@
 # Weekly Plan
 
 This document outlines the expected weekly progress and milestones for completing the backend project.
-The structure aligns with the Product Requirements Document (PRD) and the minimum API expectations documented in this project folder.
+The structure aligns with the Requirements document and the minimum API expectations documented in this project folder.
 
 The goal is to progressively implement a fully functional backend API with proper documentation, testing, and deployment.
 
