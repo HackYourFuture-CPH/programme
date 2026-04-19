@@ -30,7 +30,7 @@ erDiagram
     string description
     datetime created
     datetime updated
-    date due_date
+    datetime due_date
     int status_id FK
   }
   USER_TASK {
@@ -108,7 +108,7 @@ INSERT INTO user (name, email, phone) VALUES ('My Name', 'my_email@example.com',
 
 -- Part 1, Question 2: Insert a new task
 INSERT INTO task (title, description, created, updated, due_date, status_id)
-VALUES ('Learn SQL', 'Practice database queries', datetime('now'), datetime('now'), date('now', '+7 days'), 2);
+VALUES ('Learn SQL', 'Practice database queries', datetime('now'), datetime('now'), date('now', '+7 days'), (SELECT id FROM status WHERE name = 'In progress'));
 ```
 
 ## 2. Events Startup Project
