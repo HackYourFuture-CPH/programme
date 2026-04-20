@@ -63,3 +63,16 @@ To submit your finished project, you will need:
   - [ ] A link to your deployed app
   - [ ] Key technical summary & decisions
   - [ ] Known limitations & future improvements
+
+## Optional Ideas
+
+These are not required, and you must complete all other requirements and deliverables first to pass this project. Then you are welcome to implement these ideas or use them for inspiration to improve your project and develop your skills further.
+
+- [ ] Use Firebase as an auth provider
+- [ ] Add dark mode / theme switching
+- [ ] Implement offline support with service workers or local caching
+- [ ] Add end-to-end tests (e.g. with Cypress or Playwright)
+- [ ] Set up a CI pipeline (e.g. GitHub Actions) to run your tests and linting on each PR
+- [ ] Add animations and transitions for a polished user experience
+- [ ] Implement internationalisation (i18n) to support multiple languages
+- [ ] Achieve a Lighthouse accessibility score of 90+
