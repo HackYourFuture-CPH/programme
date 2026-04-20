@@ -37,7 +37,7 @@ Users must be able to:
   - [ ] No sensitive data (passwords, tokens) exposed in API responses
 
 - [ ] External service integration
-  - [ ] Integrate securely with a third-party service or API (e.g. without exposing secrets)
+  - [ ] Securely integrate with a third-party service or API (e.g. without exposing secrets)
 
 ## Organisational Requirements
 
