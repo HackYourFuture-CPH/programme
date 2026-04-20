@@ -31,4 +31,4 @@ By the end of this session, you will be able to:
 
 ## Requirements
 
-See [Requirements](frontend-requirements.md).
+See [Requirements](requirements.md).
