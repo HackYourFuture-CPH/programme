@@ -6,11 +6,38 @@ This document describes all requirements that you _must_ complete as part of fin
 
 Users must be able to:
 
-TODO
+- [ ] Browse or query the main resource(s) of your API (e.g. list, search, filter, paginate)
+- [ ] View detailed information about a specific resource
+- [ ] Create an account and log in
+- [ ] Perform authenticated actions (e.g. create, update, or delete resources they own)
+- [ ] Receive meaningful error messages when something goes wrong (e.g. validation errors, unauthorized access, missing resources)
+- [ ] Integrate with at least 1 third-party service or API (e.g. email delivery, file storage, payment simulation, geolocation, weather data)
 
 ## Technical Requirements
 
-TODO
+- [ ] Database
+  - [ ] Use PostgreSQL as the database
+  - [ ] Design and document your schema with an Entity-Relationship Diagram (ERD)
+  - [ ] All database queries must use parameterised queries or a query builder (no SQL injection vulnerabilities)
+
+- [ ] API design
+  - [ ] RESTful API design following consistent resource naming and HTTP method conventions
+  - [ ] API routes documented with Swagger / OpenAPI
+  - [ ] Appropriate use of HTTP status codes (e.g. 201 for created, 404 for not found, 401/403 for auth errors)
+
+- [ ] Authentication and authorisation
+  - [ ] User registration with securely hashed passwords (e.g. bcrypt)
+  - [ ] Login flow that returns a token or establishes a session
+  - [ ] Protected routes that require authentication
+  - [ ] Basic authorisation (e.g. users can only modify their own resources)
+
+- [ ] Security and error handling
+  - [ ] Input validation on incoming requests (e.g. required fields, correct types)
+  - [ ] Centralised error handling middleware
+  - [ ] No sensitive data (passwords, tokens) exposed in API responses
+
+- [ ] External service integration
+  - [ ] Integrate securely with a third-party service or API (e.g. without exposing secrets)
 
 ## Organisational Requirements
 
