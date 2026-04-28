@@ -2,6 +2,8 @@
 
 This module contains information about the final module of the program, where you will take everything you have learned so far and work together as a team to build a final project together.
 
+## How it works
+
 This module usually runs for 4-5 weeks.
 
 The final project can be organised differently, depending on the team responsible, mentors and the opportunities available at the time. The default option is to run it with:
@@ -31,4 +33,4 @@ By the end of this session, you will be able to:
 
 ## Requirements
 
-See [Requirements](backend-requirements.md).
+See [Requirements](requirements.md).

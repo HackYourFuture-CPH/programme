@@ -131,7 +131,7 @@
     - [Requirements](courses/frontend/events-startup-project/requirements.md)
     - [Weekly Plan](courses/frontend/events-startup-project/weekly-plan.md)
   - [Final Project](courses/frontend/final-project/README.md)
-    - [Requirements](courses/frontend/final-project/frontend-requirements.md)
+    - [Requirements](courses/frontend/final-project/requirements.md)
     - [Session Plan](courses/frontend/final-project/session-plan.md)
 
 - [Backend](courses/backend/README.md)
@@ -195,7 +195,7 @@
     - [Requirements](courses/backend/events-startup-project/requirements.md)
     - [Weekly Plan](courses/backend/events-startup-project/weekly-plan.md)
   - [Final Project](courses/backend/final-project/README.md)
-    - [Requirements](courses/backend/final-project/backend-requirements.md)
+    - [Requirements](courses/backend/final-project/requirements.md)
     - [Session Plan](courses/backend/final-project/session-plan.md)
 
 - [Common Modules](shared-modules/README.md)
