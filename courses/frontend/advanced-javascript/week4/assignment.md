@@ -31,30 +31,13 @@ For the error system, think about what kinds of errors can happen in your app �
 
 Sign up at [RapidAPI](https://rapidapi.com) and subscribe to the **website-screenshot6** API (free tier is enough). You will get an API key.
 
-The API takes a website URL and returns **JSON** with a `screenshotUrl` field — a direct link to the generated image you can use in an `<img>` tag.
-
-```js
-async function fetchScreenshot(websiteUrl) {
-  const response = await fetch(
-    `https://website-screenshot6.p.rapidapi.com/screenshot?url=${encodeURIComponent(websiteUrl)}&width=1920&height=1080`,
-    {
-      method: "GET",
-      headers: {
-        "x-rapidapi-host": "website-screenshot6.p.rapidapi.com",
-        "x-rapidapi-key": "YOUR_API_KEY_HERE",
-      },
-    },
-  );
-
-  if (!response.ok) {
-    throw new Error(`Screenshot API error: ${response.status}`);
-  }
-
-  // The response is JSON: { screenshotUrl: "https://..." }
-  const data = await response.json();
-  return data.screenshotUrl;
-}
-```
+|                  |                                                                                        |
+| ---------------- | -------------------------------------------------------------------------------------- |
+| **Method**       | `GET`                                                                                  |
+| **URL**          | `https://website-screenshot6.p.rapidapi.com/screenshot`                                |
+| **Query params** | `url` (URL-encoded), `width`, `height`                                                 |
+| **Headers**      | `x-rapidapi-host: website-screenshot6.p.rapidapi.com` · `x-rapidapi-key: YOUR_API_KEY` |
+| **Response**     | JSON — `{ screenshotUrl: "https://..." }` — use the value directly as an `<img src>`   |
 
 > **Keep your API key out of git.** Put it in a `secret.js` file and add that file to `.gitignore`.
 
@@ -70,68 +53,13 @@ https://crudcrud.com/api/YOUR_UNIQUE_ID
 
 You can create any resource name you like after it, for example `/screenshots`. For this app you need three operations:
 
-| What you want to do       | Method   | URL                   |
-| ------------------------- | -------- | --------------------- |
-| Get all saved screenshots | `GET`    | `.../screenshots`     |
-| Save a new screenshot     | `POST`   | `.../screenshots`     |
-| Delete one screenshot     | `DELETE` | `.../screenshots/:id` |
+| What you want to do       | Method   | URL                   | Body / Notes                           |
+| ------------------------- | -------- | --------------------- | -------------------------------------- |
+| Get all saved screenshots | `GET`    | `.../screenshots`     | —                                      |
+| Save a new screenshot     | `POST`   | `.../screenshots`     | JSON with the fields you want to store |
+| Delete one screenshot     | `DELETE` | `.../screenshots/:id` | —                                      |
 
-crudcrud automatically assigns an `_id` field to each item you POST. You will need that `_id` to delete items later.
-
-#### Save a screenshot
-
-```js
-async function saveScreenshot(websiteUrl, screenshotUrl) {
-  const response = await fetch(
-    "https://crudcrud.com/api/YOUR_UNIQUE_ID/screenshots",
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ websiteUrl, screenshotUrl }),
-    },
-  );
-
-  if (!response.ok) {
-    throw new Error(`Failed to save: ${response.status}`);
-  }
-
-  // crudcrud returns the saved object with its _id
-  const saved = await response.json();
-  return saved; // { _id: "abc123", websiteUrl: "https://example.com", screenshotUrl: "https://..." }
-}
-```
-
-#### Load all screenshots
-
-```js
-async function loadScreenshots() {
-  const response = await fetch(
-    "https://crudcrud.com/api/YOUR_UNIQUE_ID/screenshots",
-  );
-
-  if (!response.ok) {
-    throw new Error(`Failed to load: ${response.status}`);
-  }
-
-  const items = await response.json();
-  return items; // Array of { _id, websiteUrl, screenshotUrl }
-}
-```
-
-#### Delete a screenshot
-
-```js
-async function deleteScreenshot(id) {
-  const response = await fetch(
-    `https://crudcrud.com/api/YOUR_UNIQUE_ID/screenshots/${id}`,
-    { method: "DELETE" },
-  );
-
-  if (!response.ok) {
-    throw new Error(`Failed to delete: ${response.status}`);
-  }
-}
-```
+crudcrud automatically assigns an `_id` field to each item you POST. You will need that `_id` to delete items later. POST requests must include `Content-Type: application/json` in the headers.
 
 > **Note:** crudcrud endpoints expire after a few days on the free plan. If your app suddenly stops working, go to crudcrud.com and get a new unique ID. Keep your unique ID in `secret.js` alongside your API key.
 
@@ -155,40 +83,7 @@ class UIComponent {
 }
 ```
 
-A `Screenshot` class is a natural fit here — it holds the website URL, the screenshot image URL, and its crudcrud `_id`, and it knows how to display itself. Think about:
-
-- What data does it need? (constructor)
-- What does its card look like? (render)
-- What can it do? (methods like delete)
-
-```js
-class Screenshot extends UIComponent {
-  constructor(websiteUrl, screenshotUrl, id) {
-    super();
-    this.websiteUrl = websiteUrl;
-    this.screenshotUrl = screenshotUrl; // direct image URL from the API
-    this.id = id; // _id from crudcrud — needed to delete later
-  }
-
-  render() {
-    // create this.element if it doesn't exist yet, then build the HTML
-    // use this.screenshotUrl directly as the <img> src
-    // return this.element so the caller can append it to the page
-  }
-
-  async delete() {
-    // call the crudcrud delete function, then remove this.element from the DOM
-  }
-}
-
-// Usage
-const card = new Screenshot(
-  "https://example.com",
-  "https://storage.linebot.site/...",
-  "abc123",
-);
-document.getElementById("screenshots-list").appendChild(card.render());
-```
+A `Screenshot` class is a natural fit here — think about what data it needs, what its card looks like, and what it can do (hint: deleting itself is a good method).
 
 **When to call `render()`:**
 
@@ -201,57 +96,7 @@ document.getElementById("screenshots-list").appendChild(card.render());
 
 Not all errors are the same. A user typing nothing in the input is different from the API being down. Custom error classes let you handle each case differently.
 
-Here is a starting point — adapt it to fit your actual app:
-
-```js
-class ValidationError extends Error {
-  constructor(message) {
-    super(message);
-    this.name = "ValidationError";
-  }
-  toUserMessage() {
-    return `Invalid input: ${this.message}`;
-  }
-}
-
-class ApiError extends Error {
-  constructor(message, statusCode) {
-    super(message);
-    this.name = "ApiError";
-    this.statusCode = statusCode;
-  }
-  toUserMessage() {
-    return `Something went wrong with the request (${this.statusCode}). Try again.`;
-  }
-}
-```
-
-Use `throw` to signal that something went wrong, and `try/catch` with `instanceof` to handle each type:
-
-```js
-async function handleGenerateScreenshot(websiteUrl) {
-  try {
-    if (!websiteUrl || websiteUrl.trim() === "") {
-      throw new ValidationError("URL cannot be empty");
-    }
-
-    const screenshotUrl = await fetchScreenshot(websiteUrl);
-    // ... display the screenshot using screenshotUrl as <img> src
-  } catch (error) {
-    if (error instanceof ValidationError) {
-      // User made a mistake — show a friendly message next to the input
-      showError(error.toUserMessage());
-    } else if (error instanceof ApiError) {
-      // API problem — tell the user to try again
-      showError(error.toUserMessage());
-    } else {
-      // Unexpected error — log it for debugging
-      console.error(error);
-      showError("An unexpected error occurred.");
-    }
-  }
-}
-```
+Think about what kinds of errors can happen in your app — validation failures, API problems, network issues. Each could be its own class that `extends Error`, with a method that returns a user-friendly message. Then use `try/catch` with `instanceof` to handle each type differently.
 
 **Where to use error handling in this app:**
 
