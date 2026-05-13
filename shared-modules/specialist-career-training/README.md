@@ -6,11 +6,10 @@ In this repository you can find all the info and material from your Career Sessi
 
 ## Contents
 
-| Week | Topic                                                                                                                                                                | Preparation                           | Session Plan                                          | Assignment                          |
+| Week | Topic                                                                                                                                                                | Preparation         | Session Plan                                          | Assignment                          |
 | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | ----------------------------------------------------- | ----------------------------------- |
-| 1.   | [Jobhunting in Denmark](./week1/README.md). What is a strong profile looks like, including your CV and Github & LinkedIn.
-Practice the first part of the interview process (HR, Intro to behavioural tests) and gain some feedback. | [Preparation](./week1/preparation.md) | [Session Plan](./week1/session-plan.md) (for mentors) | [Assignment](./week1/assignment.md) |
-| 2.   | [Mock Technical Interview](./week2/README.md). Practice the technical part of the interview process and gain some feedback.                                              | [Preparation](./week2/preparation.md) | [Session Plan](./week2/session-plan.md) (for mentors) | (No assignment)                     |
+| 1.   | [Jobhunting in Denmark](./week1/README.md). What is a strong profile looks like, including your CV and Github & LinkedIn.Practice the first part of the interview process (HR, Intro to behavioural tests) and gain some feedback. |                                                                                                                          [Preparation](./week1/preparation.md) | [Session Plan](./week1/session-plan.md) (for mentors) | [Assignment](./week1/assignment.md) |
+| 2.   | [Mock Technical Interview](./week2/README.md). Practice the technical part of the interview process and gain some feedback.                                          |[Preparation](./week2/preparation.md) | [Session Plan](./week2/session-plan.md) (for mentors) | (No assignment)                     |
 
 ## Module Learning Goals
 
