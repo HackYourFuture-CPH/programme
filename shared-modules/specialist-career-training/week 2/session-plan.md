@@ -7,7 +7,7 @@ This session is focused on realistic Technical interviews, peer feedback, and vo
 Equip trainees with a realistic understanding of the job search process and what is expected beyond technical proficiency. Clarify how HYF can support them, and where its boundaries lie. Set the foundation for professional self-presentation and awareness of the Danish job market structure.\
 It’s an opportunity to explore both the practical and personal sides of the interview process, and to better understand what to expect when applying for roles in tech.
 
-Guide trainees to understand how their CV and LinkedIn & Github profile should work in harmony to present a complete and professional image to recruiters. Provide tools, examples, and hands-on practice in critiquing and improving their online presence.<br>
+Guide trainees to understand how their CV and LinkedIn & Github profile should work in harmony to present a complete and professional image to recruiters. Provide tools, examples, and hands-on practice in critiquing and improving their online presence.
 
 ## Session Plan&#x20;
 
@@ -35,7 +35,6 @@ A technical interview serves as a practical evaluation of a candidate’s proble
 9. Evaluate code readability, naming conventions, and overall organization (if coding is involved)
 10. Consider their adaptability when requirements or constraints are adjusted
 
-<br>
 
 ### Examples of General Technical Questions (for all candidates)
 
@@ -48,7 +47,7 @@ A technical interview serves as a practical evaluation of a candidate’s proble
 7. What trade-offs do you consider when choosing between different solutions?
 8. How do you handle feedback during code reviews?
 9. Can you describe a recent project and the technical decisions you made?
-10. How do you prioritize what to learn next in your development journey?<br>
+10. How do you prioritize what to learn next in your development journey?
 
 ### Backend-Focused Questions
 
@@ -80,7 +79,7 @@ If you need additional information that is not directly available in this page, 
 
 Perform an HTTP GET request on the current page URL with the `ask` query parameter:
 
-```
+```Text
 GET https://program.hackyourfuture.dk/course-content/shared-modules/specialist-career-training/week-2/session-plan.md?ask=<question>
 ```
 

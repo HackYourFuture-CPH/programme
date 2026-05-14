@@ -1,11 +1,11 @@
 # Assignment
 
-#### Prepare for technical mock interview
+## Prepare for technical mock interview
 
 - [ ] Go through your Event app and do your last small changes.
 - [ ] Build your portfolio, or if you already have one, polish it using what you learned.&#x20;
 
-#### If you not already started with these changes from Foundation this is the last chance to take a look at these docs and fix your profiles.&#x20;
+### If you not already started with these changes from Foundation this is the last chance to take a look at these docs and fix your profiles.&#x20;
 
 1. Read the [HYF CV Guide](https://app.gitbook.com/o/-LMwEwghYVv6CkVwh8Eb/s/v5mADMeH7axh0TSGyUQy/course-content/foundation/career-training/week1/session-materials/cv-guide)​
 2. Add your current email address, LinkedIn profile and **GitHub** profile to your Slack profile
@@ -21,7 +21,7 @@ If you need additional information that is not directly available in this page, 
 
 Perform an HTTP GET request on the current page URL with the `ask` query parameter:
 
-```
+```Text
 GET https://program.hackyourfuture.dk/course-content/shared-modules/specialist-career-training/week-1/assignment.md?ask=<question>
 ```
 

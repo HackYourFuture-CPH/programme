@@ -10,7 +10,7 @@
 
 ## Do&#x20;
 
-Please check at least on of this Webpages and do the Test so you familiarise yourself with it.<br>
+Please check at least on of this Webpages and do the Test so you familiarise yourself with it.
 
 Behavioral tests help companies see past your resume by understanding how you're likely to think, act, and react in real work situations.
 
@@ -26,7 +26,7 @@ If you need additional information that is not directly available in this page, 
 
 Perform an HTTP GET request on the current page URL with the `ask` query parameter:
 
-```
+```Text
 GET https://program.hackyourfuture.dk/course-content/shared-modules/specialist-career-training/week-1/preparation.md?ask=<question>
 ```
 

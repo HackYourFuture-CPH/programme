@@ -5,7 +5,7 @@
 Equip trainees with a realistic understanding of the job search process and what is expected beyond technical proficiency. Clarify how HYF can support them, and where its boundaries lie. Set the foundation for professional self-presentation and awareness of the Danish job market structure.\
 It’s an opportunity to explore both the practical and personal sides of the interview process, and to better understand what to expect when applying for roles in tech.
 
-Guide trainees to understand how their CV and LinkedIn & Github profile should work in harmony to present a complete and professional image to recruiters. Provide tools, examples, and hands-on practice in critiquing and improving their online presence.<br>
+Guide trainees to understand how their CV and LinkedIn & Github profile should work in harmony to present a complete and professional image to recruiters. Provide tools, examples, and hands-on practice in critiquing and improving their online presence.
 
 ## Session Plan&#x20;
 
@@ -15,7 +15,7 @@ We will wrap up with an interactive exercise where trainees present themselves a
 
 ### Presentation and round-table discussion
 
-&#x20;On technical interview (preferably lead by 1 or 2 mentors, with the others being able to chime in with their comments and experiences)<br>
+&#x20;On technical interview (preferably lead by 1 or 2 mentors, with the others being able to chime in with their comments and experiences)
 
 - Prepare to walk through a typical technical interview structure
 - Think of 1-2 example problems or scenarios you can discuss

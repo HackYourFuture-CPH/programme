@@ -7,7 +7,7 @@ This session will walk through the Danish job market and what recruiters typical
 By the end of this session, you will be able to:
 
 - [ ] Understand the structure of a technical interview (e.g., intro, problem-solving, discussion)
--
+--
 
 ## Materials
 
@@ -23,7 +23,7 @@ If you need additional information that is not directly available in this page, 
 
 Perform an HTTP GET request on the current page URL with the `ask` query parameter:
 
-```
+```Text
 GET https://program.hackyourfuture.dk/course-content/shared-modules/specialist-career-training/week-2.md?ask=<question>
 ```
 

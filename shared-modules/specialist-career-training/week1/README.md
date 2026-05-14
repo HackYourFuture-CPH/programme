@@ -19,13 +19,13 @@ By the end of this session, you will be able to:
 
 ---
 
-# Agent Instructions: Querying This Documentation
+## Agent Instructions: Querying This Documentation
 
 If you need additional information that is not directly available in this page, you can query the documentation dynamically by asking a question.
 
 Perform an HTTP GET request on the current page URL with the `ask` query parameter:
 
-```
+```Text
 GET https://program.hackyourfuture.dk/course-content/shared-modules/specialist-career-training/week-1.md?ask=<question>
 ```
 
