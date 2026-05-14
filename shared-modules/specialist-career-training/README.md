@@ -15,13 +15,12 @@ In this repository you can find all the info and material from your Career Sessi
 
 By the end of this module, you will be able to:
 
-* [ ] Understand where to look for suitable jobs and internships
-* [ ] Understand what you should do in order to be an attractive candidate on the Danish job market
-* [ ] Learn how to identify and communicate your competencies
-* [ ] Understand what HYF can do to support you on your job hunt
-* [ ] Know how to assemble an effective Github and LinkedIn profile
-* [ ] Learn how to perform well in a Technical interview
-
+- [ ] Understand where to look for suitable jobs and internships
+- [ ] Understand what you should do in order to be an attractive candidate on the Danish job market
+- [ ] Learn how to identify and communicate your competencies
+- [ ] Understand what HYF can do to support you on your job hunt
+- [ ] Know how to assemble an effective Github and LinkedIn profile
+- [ ] Learn how to perform well in a Technical interview
 
 ---
 
@@ -39,4 +38,3 @@ The question should be specific, self-contained, and written in natural language
 The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
 
 Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.
-

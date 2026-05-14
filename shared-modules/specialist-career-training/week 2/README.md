@@ -6,15 +6,14 @@ This session will walk through the Danish job market and what recruiters typical
 
 By the end of this session, you will be able to:
 
-* [ ] Understand the structure of a technical interview (e.g., intro, problem-solving, discussion)
-*
+- [ ] Understand the structure of a technical interview (e.g., intro, problem-solving, discussion)
+-
 
 ## Materials
 
-* [Preparation](/course-content/foundation/career-training/week1/preparation.md)
-* [Session Plan](/course-content/foundation/career-training/week1/session-plan.md) (for mentors)
-* [Assignment](/course-content/foundation/career-training/week1/assignment.md)
-
+- [Preparation](/course-content/foundation/career-training/week1/preparation.md)
+- [Session Plan](/course-content/foundation/career-training/week1/session-plan.md) (for mentors)
+- [Assignment](/course-content/foundation/career-training/week1/assignment.md)
 
 ---
 
@@ -32,4 +31,3 @@ The question should be specific, self-contained, and written in natural language
 The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
 
 Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.
-
