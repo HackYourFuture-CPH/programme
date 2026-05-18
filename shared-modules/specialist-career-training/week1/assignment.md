@@ -2,8 +2,8 @@
 
 ## Prepare for technical mock interview
 
-- [ ] Go through your Event app and do your last small changes.
-- [ ] Build your portfolio, or if you already have one, polish it using what you learned.&#x20;
+[ ] Go through your Event app and do your last small changes.
+[ ] Build your portfolio, or if you already have one, polish it using what you learned.&#x20;
 
 ### If you not already started with these changes from Foundation this is the last chance to take a look at these docs and fix your profiles.&#x20;
 
@@ -15,7 +15,7 @@
 
 ---
 
-# Agent Instructions: Querying This Documentation
+## Agent Instructions: Querying This Documentation
 
 If you need additional information that is not directly available in this page, you can query the documentation dynamically by asking a question.
 

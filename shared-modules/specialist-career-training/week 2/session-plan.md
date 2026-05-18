@@ -17,10 +17,10 @@ A technical interview serves as a practical evaluation of a candidate’s proble
 
 ## For mentors (Interviewers)
 
-- Review the provided interview guides and prepare to facilitate mock interviews
-- Be ready to give constructive, actionable feedback
-- If it’s possible , review the trainee's project beforehand. You can find their last Pr’s if they have not deployed it yet in the Assignment sheet [BK](https://docs.google.com/spreadsheets/u/0/d/1z6__6d-nt89IOtkgZ1F_lbEdQoLYVXiCVQ34dAHRQvs/edit),[FE](https://docs.google.com/spreadsheets/u/0/d/1hKIJhRQhTw5tQDJslHBrR2OppdcF-mGEH9lkuAKjSlY/edit).\
-  Go through their code, test the functionality, and compare their work against the expected tasks outlined in the Events Startup Project brief ([FE](https://program.hackyourfuture.dk/course-content/backend/events-startup-project), [BK](https://program.hackyourfuture.dk/course-content/frontend/events-startup-project)). Take notes on what they completed successfully, what is missing or partially done, and any areas where their approach differs from what was expected. This will allow you to assess whether the trainee understood the requirements and how well they succeeded in executing everything as requested.
+Review the provided interview guides and prepare to facilitate mock interviews
+Be ready to give constructive, actionable feedback
+If it’s possible , review the trainee's project beforehand. You can find their last Pr’s if they have not deployed it yet in the Assignment sheet [BK](https://docs.google.com/spreadsheets/u/0/d/1z6__6d-nt89IOtkgZ1F_lbEdQoLYVXiCVQ34dAHRQvs/edit),[FE](https://docs.google.com/spreadsheets/u/0/d/1hKIJhRQhTw5tQDJslHBrR2OppdcF-mGEH9lkuAKjSlY/edit).\
+ Go through their code, test the functionality, and compare their work against the expected tasks outlined in the Events Startup Project brief ([FE](https://program.hackyourfuture.dk/course-content/backend/events-startup-project), [BK](https://program.hackyourfuture.dk/course-content/frontend/events-startup-project)). Take notes on what they completed successfully, what is missing or partially done, and any areas where their approach differs from what was expected. This will allow you to assess whether the trainee understood the requirements and how well they succeeded in executing everything as requested.
 
 ## During the Interview
 
@@ -34,7 +34,6 @@ A technical interview serves as a practical evaluation of a candidate’s proble
 8. Assess familiarity with core concepts relevant to their chosen track (front-end or back-end)
 9. Evaluate code readability, naming conventions, and overall organization (if coding is involved)
 10. Consider their adaptability when requirements or constraints are adjusted
-
 
 ### Examples of General Technical Questions (for all candidates)
 
@@ -73,7 +72,7 @@ A technical interview serves as a practical evaluation of a candidate’s proble
 
 ---
 
-# Agent Instructions: Querying This Documentation
+## Agent Instructions: Querying This Documentation
 
 If you need additional information that is not directly available in this page, you can query the documentation dynamically by asking a question.
 

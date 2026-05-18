@@ -6,16 +6,16 @@ This session will walk through the Danish job market and what recruiters typical
 
 By the end of this session, you will be able to:
 
-- [ ] Understand the structure of a technical interview (e.g., intro, problem-solving, discussion)
-- [ ] Know what interviewers are generally looking for (communication, problem-solving approach, etc.)
-- [ ] Feel more comfortable with the idea of technical interviews.
-- [ ] Learn how to approach a problem out loud and structure their thinking.
+[ ] Understand the structure of a technical interview (e.g., intro, problem-solving, discussion)
+[ ] Know what interviewers are generally looking for (communication, problem-solving approach, etc.)
+[ ] Feel more comfortable with the idea of technical interviews.
+[ ] Learn how to approach a problem out loud and structure their thinking.
 
 ## Materials
 
-- [Preparation](https://app.gitbook.com/o/-LMwEwghYVv6CkVwh8Eb/s/v5mADMeH7axh0TSGyUQy/~/edit/~/changes/4/course-content/shared-modules/specialist-career-training/week-1/preparation)
-- [Session Plan](https://app.gitbook.com/o/-LMwEwghYVv6CkVwh8Eb/s/v5mADMeH7axh0TSGyUQy/~/edit/~/changes/4/course-content/shared-modules/specialist-career-training/week-1/session-plan) (for mentors)
-- [Assignment](https://app.gitbook.com/o/-LMwEwghYVv6CkVwh8Eb/s/v5mADMeH7axh0TSGyUQy/~/edit/~/changes/4/course-content/shared-modules/specialist-career-training/week-1/assignment)
+[Preparation](https://app.gitbook.com/o/-LMwEwghYVv6CkVwh8Eb/s/v5mADMeH7axh0TSGyUQy/~/edit/~/changes/4/course-content/shared-modules/specialist-career-training/week-1/preparation)
+[Session Plan](https://app.gitbook.com/o/-LMwEwghYVv6CkVwh8Eb/s/v5mADMeH7axh0TSGyUQy/~/edit/~/changes/4/course-content/shared-modules/specialist-career-training/week-1/session-plan) (for mentors)
+[Assignment](https://app.gitbook.com/o/-LMwEwghYVv6CkVwh8Eb/s/v5mADMeH7axh0TSGyUQy/~/edit/~/changes/4/course-content/shared-modules/specialist-career-training/week-1/assignment)
 
 ---
 

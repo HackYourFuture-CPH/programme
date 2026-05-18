@@ -6,22 +6,23 @@ In this repository you can find all the info and material from your Career Sessi
 
 ## Contents
 
-| week | Topic                                                                                                                                                                                             | Session Plan | Session Plan | Assignment      |
-| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------------ | --------------- |
-| 1.   | What is a strong profile looks like, including your CV and Github & LinkedIn.Practice the first part of the interview process (HR, Intro to behavioural tests) and gain some feedback. | Preparation  | Session Plan | Assignment      |
-| 2.   | Mock Technical Interview. Practice the Second part of the interview process and gain some feedback.                                                                                               | Preparation  | Session Plan | (No assignment) |
-|      |                                                                                                                                                                                                   |              |              |                 |
+| week                | Topic                                                                                                                                                              | Session Plan |  Preparation | Assignment      |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ------------ | --------------- |
+| 1.                  | What is a strong profile looks like, including your CV and Github & LinkedIn.Practice the first                 part of the interview process (HR, Intro to behavioural tests) and |
+| gain some feedback. | Preparation                                                                                                                                                        | Session Plan | Preparation  |  Assignment    |
+| 2.                  | Mock Technical Interview. Practice the Second part of the interview process and gain some feedback.                                | SessionPlan  | Preparation  | (No assignment) |
+|                     |                                                                                                                                            |              |              |                 |
 
 ## Module Learning Goals
 
 By the end of this module, you will be able to:
 
-- [ ] Understand where to look for suitable jobs and internships
-- [ ] Understand what you should do in order to be an attractive candidate on the Danish job market
-- [ ] Learn how to identify and communicate your competencies
-- [ ] Understand what HYF can do to support you on your job hunt
-- [ ] Know how to assemble an effective Github and LinkedIn profile
-- [ ] Learn how to perform well in a Technical interview
+[ ] Understand where to look for suitable jobs and internships
+[ ] Understand what you should do in order to be an attractive candidate on the Danish job market
+[ ] Learn how to identify and communicate your competencies
+[ ] Understand what HYF can do to support you on your job hunt
+[ ] Know how to assemble an effective Github and LinkedIn profile
+[ ] Learn how to perform well in a Technical interview
 
 ---
 
@@ -31,7 +32,7 @@ If you need additional information that is not directly available in this page, 
 
 Perform an HTTP GET request on the current page URL with the `ask` query parameter:
 
-``` text
+```text
 GET https://program.hackyourfuture.dk/course-content/shared-modules/specialist-career-training.md?ask=<question>
 ```
 
