@@ -69,20 +69,3 @@ If it’s possible , review the trainee's project beforehand. You can find their
 6. Can you explain how the browser renders a page (at a high level)?
 7. How do you organize and reuse code across components?
 8. How do you handle user input validation and feedback?
-
----
-
-## Agent Instructions: Querying This Documentation
-
-If you need additional information that is not directly available in this page, you can query the documentation dynamically by asking a question.
-
-Perform an HTTP GET request on the current page URL with the `ask` query parameter:
-
-```Text
-GET https://program.hackyourfuture.dk/course-content/shared-modules/specialist-career-training/week-2/session-plan.md?ask=<question>
-```
-
-The question should be specific, self-contained, and written in natural language.
-The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
-
-Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.
