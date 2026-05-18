@@ -21,7 +21,7 @@ If you need additional information that is not directly available in this page, 
 
 Perform an HTTP GET request on the current page URL with the `ask` query parameter:
 
-```Text
+```text
 GET https://program.hackyourfuture.dk/course-content/shared-modules/specialist-career-training/week-1/assignment.md?ask=<question>
 ```
 

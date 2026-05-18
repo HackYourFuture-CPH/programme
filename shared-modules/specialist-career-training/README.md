@@ -6,12 +6,11 @@ In this repository you can find all the info and material from your Career Sessi
 
 ## Contents
 
-| week                | Topic                                                                                                                                                              | Session Plan |  Preparation | Assignment      |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ------------ | --------------- |
-| 1.                  | What is a strong profile looks like, including your CV and Github & LinkedIn.Practice the first                 part of the interview process (HR, Intro to behavioural tests) and |
-| gain some feedback. | Preparation                                                                                                                                                        | Session Plan | Preparation  |  Assignment    |
-| 2.                  | Mock Technical Interview. Practice the Second part of the interview process and gain some feedback.                                | SessionPlan  | Preparation  | (No assignment) |
-|                     |                                                                                                                                            |              |              |                 |
+| Week                                                                              | Topic                                                                         | Preparation                                                               | Assignment  | SessionPlan |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ----------- | ----------- | --------------- |
+| 1.                                                                                | What is a strong profile looks like, including your CV and Github & LinkedIn. |                                                                           |             |             |
+| Practice the first part of the interview process (HR, Intro to behavioural tests) |
+| 2.                                                                                | Mock Technical Interview.                                                     | Practice the Second part of the interview process and gain some feedback. | SessionPlan | Preparation | (No assignment) |
 
 ## Module Learning Goals
 
