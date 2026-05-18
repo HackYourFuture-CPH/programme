@@ -7,8 +7,8 @@
 - [ ] Know your project (Events Startup Project) inside out. Be ready to explain why you made every technical decision, what trade-offs you considered, and what limitations your project still has. Structure your presentation into four parts: a quick overview of the problem you solved, a live demo showing 2-3 key features, a technical deep dive on one interesting challenge, and your key learnings. Practice your demo at least three times, have a backup (screenshots or video), and prepare answers for common questions like "What was the hardest bug?" or "How would you scale this?"
 
 - [ ] During the presentation, speak clearly and don't rush. If you don't know something, say "I don't know, but here is how I would find out" instead of guessing.\
- Interviewers are evaluating your technical competence, problem-solving, communication, and self-awareness — not whether your project is perfect.\
- Be honest, be prepared, and remember, they want to see how you think, not catch you failing.\
+       Interviewers are evaluating your technical competence, problem-solving, communication, and self-awareness — not whether your project is perfect.\
+       Be honest, be prepared, and remember, they want to see how you think, not catch you failing.\
 
 - [ ] Practice solving simple problems out loud.\
 
