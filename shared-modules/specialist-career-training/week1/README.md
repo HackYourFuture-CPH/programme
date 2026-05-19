@@ -13,6 +13,7 @@ By the end of this session, you will be able to:
 
 ## Materials
 
-- [Preparation](https://app.gitbook.com/o/-LMwEwghYVv6CkVwh8Eb/s/v5mADMeH7axh0TSGyUQy/~/edit/~/changes/4/course-content/shared-modules/specialist-career-training/week-1/preparation)
-- [Session Plan](https://app.gitbook.com/o/-LMwEwghYVv6CkVwh8Eb/s/v5mADMeH7axh0TSGyUQy/~/edit/~/changes/4/course-content/shared-modules/specialist-career-training/week-1/session-plan) (for mentors)
-- [Assignment](https://app.gitbook.com/o/-LMwEwghYVv6CkVwh8Eb/s/v5mADMeH7axh0TSGyUQy/~/edit/~/changes/4/course-content/shared-modules/specialist-career-training/week-1/assignment)
+- [Preparation](preparation.md)
+- [Session Plan](session-plan.md) (for mentors)
+- [Assignment](assignment.md)
+  
