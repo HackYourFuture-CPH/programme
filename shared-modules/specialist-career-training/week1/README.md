@@ -1,4 +1,4 @@
-# Week 1
+# Strong Profile & CV
 
 This session will walk through the Danish job market and what recruiters typically look for. Trainees are now in their specialisation round, so they're much stronger on the technical side than before. We'll also talk about how a solid CV and LinkedIn profile & Github together with those deeper tech skills help present them as mature, capable candidates that recruiters will actually notice.
 
