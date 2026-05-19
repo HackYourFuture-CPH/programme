@@ -10,6 +10,6 @@ By the end of this session, you will be able to:
 
 ## Materials
 
-[Preparation](preparation.md)
-[Session Plan](session-plan.md)
-[Assignment](assignment.md)
+- [Preparation](preparation.md)
+- [Session Plan](session-plan.md)
+- [Assignment](assignment.md)
