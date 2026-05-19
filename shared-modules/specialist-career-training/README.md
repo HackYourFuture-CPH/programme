@@ -8,8 +8,8 @@ In this repository you can find all the info and material from your Career Sessi
 
 | Week | Topic                                         | Preparation                           | Session Plan                            | Assignment                          |
 | ---- | --------------------------------------------- | ------------------------------------- | --------------------------------------- | ----------------------------------- |
-| 1.   | [Strong Profile & CV](./week1/README.md)      | [Preparation](./week1/preparation.md) | [Session Plan](./week1/session-plan.md) | [Assignment](./week1/assignment.md) |
-| 2.   | [Mock Technical Interview](./week2/README.md) | [Preparation](./week2/preparation.md) | [Session Plan](./week2/session-plan.md) | _(No assignment)_                   |
+| 1.   | [Strong Profile & CV](week1/README.md)      | [Preparation](week1/preparation.md) | [Session Plan](week1/session-plan.md) | [Assignment](week1/assignment.md) |
+| 2.   | [Mock Technical Interview](week2/README.md) | [Preparation](week2/preparation.md) | [Session Plan](week2/session-plan.md) | _(No assignment)_                   |
 
 ## Module Learning Goals
 
