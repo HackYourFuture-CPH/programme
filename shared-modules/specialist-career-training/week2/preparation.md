@@ -18,6 +18,6 @@
 
 This interview will be 10% soft skills and 90% technical. That means, that while the main focus is on the technical aspects, attention will also be on how well you manage to communicate your technical knowledge.
 
-You should start with a brief introduction of yourself as well as your interest in the company and the position.&#x20;
+You should start with a brief introduction of yourself as well as your interest in the position.&#x20;
 
 A technical interview serves as a practical evaluation of a candidate’s problem-solving abilities, coding skills, and technical understanding relevant to the role. It allows interviewers to assess how candidates approach challenges, structure their thinking, and apply core concepts in real-time. Beyond arriving at a correct solution, this stage emphasizes clarity of communication, logical reasoning, and the ability to collaborate through problems. This process helps identify candidates who can effectively translate their knowledge into practice while demonstrating the technical competence required for the role.
