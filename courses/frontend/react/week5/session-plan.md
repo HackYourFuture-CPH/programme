@@ -50,24 +50,40 @@
 
 ### Next.js Router Hooks
 
-#### Understanding the `useParams` Hook
+#### Understanding the `useParams` Hook (client-only)
 
 - Explain the purpose of the `useParams` hook
 - Discuss how to use the `[]` bracket notation to mark params in a folder/filename
 - Demonstrate how to use `useParams` to access the params of the current path
 
-#### Understanding the `useSearchParam` Hook
+#### Understanding the `useSearchParam` Hook (client-only)
 
 - Explain the purpose of the `useSearchParams` hook
 - Demonstrate how to use `useSearchParams` to access the query strings
 
-#### Working With the `useRouter` Hook
+#### Working With the `useRouter` Hook (client-only)
 
 - Introduce the `<Link>` component for most links
 - Discuss the need for redirects in web applications (authentication, URL changes, etc.)
 - Introduce the `useRouter` hook
 - Explain how to access various router properties (push, replace, etc.)
 - Demonstrate programmatic navigation using `router.push` and `router.replace`
+
+#### Working With `params` and `searchParams` in Server Components
+
+- Mention that the aforementioned hooks don't work in Server Components (Next.js pages)
+- Explain that we can use the object Next.js passes to page functions to get `params` and `searchParams` on the server-side
+- Demonstrate usage with a sample page function like this:
+
+```typescript jsx
+// Url /{id}?query={query}
+export default async function IdPage({ params, searchParams }) {
+  const id = (await params).id;
+  const query = (await searchParams).query;
+
+  return <h1>Hello, the id is {id} and query is {query}</h1>
+}
+```
 
 ### Advanced: Server Functions & API Routes
 
