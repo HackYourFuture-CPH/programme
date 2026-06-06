@@ -142,18 +142,11 @@ export default async function IdPage({ params, searchParams }) {
 - Explore the folder structure created and research elements you don't understand
 - Run the app using `npm run dev`
 
-### 2. Create a Page That Renders the NASA Astronomy Picture of the Day (With Caption) using Server Side Rendering
+### 2. Create a Page That Renders a random dog image using Server Side Rendering
 
-- Use the [NASA API](https://api.nasa.gov/#MarsPhotos) to fetch the Astronomy Picture of the Day data
+- Use [the dog.ceo API](https://dog.ceo/dog-api/documentation/) to fetch a random image of a dog
 - Implement [data fetching](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching) to fetch the data during the render
-- Render the fetched image and caption on the page
-
-### 3. Dynamic Rendering With `useEffect`
-
-#### Create a component that fetches NASA Mars Rover Photos from an API (with caption)
-
-- Use the [NASA API](https://api.nasa.gov/#MarsPhotos) to fetch Mars Rover photos
-- Implement [client-side data fetching](https://nextjs.org/docs/pages/building-your-application/rendering/client-side-rendering) using the `useEffect` hook
+- Render the fetched image on the page
 
 #### Use `useEffect` to Fetch Data on Component Mount
 
