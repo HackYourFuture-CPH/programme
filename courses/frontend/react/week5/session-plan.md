@@ -148,22 +148,13 @@ export default async function IdPage({ params, searchParams }) {
 - Implement [data fetching](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching) to fetch the data during the render
 - Render the fetched image on the page
 
-#### Use `useEffect` to Fetch Data on Component Mount
-
-- Fetch the data when the component mounts
-- Handle component unmount and dependency updates
-
-#### Render Fetched Data in the Component
-
-- Display the fetched photos and captions in the component
-
-### 4. Routing and Navigation Exercise
+### 3. Routing and Navigation Exercise
 
 #### Create a Blog Website With Dynamic Routes to Different Blog Posts
 
 - Create a route `/blogs` that displays blogs
 - Create a dynamic route for a blog post that displays the title from the route. For example, `/blogs/my-new-post` should dynamically display "My New Post".
-- Hint: Check out the [documentation](https://nextjs.org/docs/app/api-reference/functions/use-params) for `useParams`.
+- Hint: Check out the [documentation](https://nextjs.org/docs/app/api-reference/functions/use-params) for `useParams`, if you add `'use client'` to your page, otherwise check [this page to help you choose](https://nextjs.org/docs/app/getting-started/server-and-client-components#when-to-use-server-and-client-components.)
 
 #### Create a Page That Displays a NASA EPIC Image on a Different Date Depending on a Query String Parameter Received
 
@@ -171,7 +162,7 @@ export default async function IdPage({ params, searchParams }) {
 - Access the query string parameter using `useSearchParams`
 - Fetch and display the EPIC image for the specified date
 
-### 5. Client vs. Server Exercise
+### 4. Client vs. Server Exercise
 
 - Create a component that renders 10 articles from a JSON array
 - You may use Generative AI to create **only** these articles, or use example text (search for "Lorem Ipsum generator")
@@ -185,7 +176,7 @@ export default async function IdPage({ params, searchParams }) {
 
 - [Next.js Docs on Server and Client Components](https://nextjs.org/docs/app/getting-started/server-and-client-components)
 
-### 6. Server Functions (or Server Actions) & API Routes Exercise
+### 5. Server Functions (or Server Actions) & API Routes Exercise
 
 #### Server Functions (or Server Actions)
 
