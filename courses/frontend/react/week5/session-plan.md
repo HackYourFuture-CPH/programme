@@ -158,7 +158,7 @@ export default async function IdPage({ params, searchParams }) {
 ### 4. Client vs. Server Exercise
 
 - Create a component that renders 10 articles from a JSON array
-- You may use Generative AI to create **only** these articles, or use example text (search for "Lorem Ipsum generator")
+- Download the current JSON from the Vercel blog API (https://api.vercel.app/blog) – **Attention: Rate limits apply. It's best if one person fetches the JSON and posts it in the team's Slack channel**
 - Create a page that renders the 10 articles on the server
 - Create a page that renders the 10 articles on the client
 - Use your browser's performance panel to measure the performance of both versions
