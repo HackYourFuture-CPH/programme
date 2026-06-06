@@ -177,11 +177,11 @@ export default async function IdPage({ params, searchParams }) {
 - Create a dynamic route for a blog post that displays the title from the route. For example, `/blogs/my-new-post` should dynamically display "My New Post".
 - Hint: Check out the [documentation](https://nextjs.org/docs/app/api-reference/functions/use-params) for `useParams`, if you add `'use client'` to your page, otherwise check [this page to help you choose](https://nextjs.org/docs/app/getting-started/server-and-client-components#when-to-use-server-and-client-components.)
 
-#### Create a Page That Displays a NASA EPIC Image on a Different Date Depending on a Query String Parameter Received
+#### Create a page that displays an image of a dog of a specific breed depending on a query string parameter received
 
-- Use the [NASA API](https://api.nasa.gov/#EPIC) to fetch EPIC images
-- Access the query string parameter using `useSearchParams`
-- Fetch and display the EPIC image for the specified date
+- Use [the dog.ceo API](https://dog.ceo/dog-api/documentation/) to display an image of a dog of a specific breed
+- Get the breed from the query string, in a URL like this: `http://localhost:4000?breed=elkhound`
+- Fetch and display the image for the specified breed
 
 ### 6. Server Functions (or Server Actions) & API Routes Exercise
 
