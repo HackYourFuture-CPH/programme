@@ -151,14 +151,14 @@ export default async function IdPage({ params, searchParams }) {
 ### 3. Fetch placeholder blog posts from an API
 
 - Follow the [“Fetching Data”/“with the fetch API” section in the Next.js docs](https://nextjs.org/docs/app/getting-started/fetching-data#with-the-fetch-api):
-- Fetch the placeholder blog posts in a Server Component, using fetch, from https://jsonplaceholder.typicode.com/posts
+- Fetch the placeholder blog posts in a Server Component, using fetch, from [JSON Placeholder API](https://jsonplaceholder.typicode.com/posts)
 - Show a list of all unique `userId`s in the JSON
 - Show a count of the unique users
 
 ### 4. Client vs. Server Exercise
 
 - Create a component that renders 10 articles from a JSON array
-- Download the current JSON from the Vercel blog API (https://api.vercel.app/blog) – **Attention: Rate limits apply. It's best if one person fetches the JSON and posts it in the team's Slack channel**
+- Download the current JSON from [the Vercel blog API](https://api.vercel.app/blog) – **Attention: Rate limits apply. It's best if one person fetches the JSON and posts it in the team's Slack channel**
 - Create a page that renders the 10 articles on the server
 - Create a page that renders the 10 articles on the client
 - Use your browser's performance panel to measure the performance of both versions
