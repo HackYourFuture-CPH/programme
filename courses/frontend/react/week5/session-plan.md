@@ -148,7 +148,13 @@ export default async function IdPage({ params, searchParams }) {
 - Implement [data fetching](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching) to fetch the data during the render
 - Render the fetched image on the page
 
-### 3. Routing and Navigation Exercise
+### 3. Fetch placeholder blog posts from an API
+- Follow the [“Fetching Data”/“with the fetch API” section in the Next.js docs](https://nextjs.org/docs/app/getting-started/fetching-data#with-the-fetch-api):
+- Fetch the placeholder blog posts in a Server Component, using fetch, from https://jsonplaceholder.typicode.com/posts
+- Show a list of all unique `userId`s in the JSON
+- Show a count of the unique users
+
+### 4. Routing and Navigation Exercise
 
 #### Create a Blog Website With Dynamic Routes to Different Blog Posts
 
@@ -162,7 +168,7 @@ export default async function IdPage({ params, searchParams }) {
 - Access the query string parameter using `useSearchParams`
 - Fetch and display the EPIC image for the specified date
 
-### 4. Client vs. Server Exercise
+### 5. Client vs. Server Exercise
 
 - Create a component that renders 10 articles from a JSON array
 - You may use Generative AI to create **only** these articles, or use example text (search for "Lorem Ipsum generator")
@@ -176,7 +182,7 @@ export default async function IdPage({ params, searchParams }) {
 
 - [Next.js Docs on Server and Client Components](https://nextjs.org/docs/app/getting-started/server-and-client-components)
 
-### 5. Server Functions (or Server Actions) & API Routes Exercise
+### 6. Server Functions (or Server Actions) & API Routes Exercise
 
 #### Server Functions (or Server Actions)
 
