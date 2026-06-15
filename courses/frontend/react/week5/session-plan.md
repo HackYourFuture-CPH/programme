@@ -50,24 +50,40 @@
 
 ### Next.js Router Hooks
 
-#### Understanding the `useParams` Hook
+#### Understanding the `useParams` Hook (client-only)
 
 - Explain the purpose of the `useParams` hook
 - Discuss how to use the `[]` bracket notation to mark params in a folder/filename
 - Demonstrate how to use `useParams` to access the params of the current path
 
-#### Understanding the `useSearchParam` Hook
+#### Understanding the `useSearchParam` Hook (client-only)
 
 - Explain the purpose of the `useSearchParams` hook
 - Demonstrate how to use `useSearchParams` to access the query strings
 
-#### Working With the `useRouter` Hook
+#### Working With the `useRouter` Hook (client-only)
 
 - Introduce the `<Link>` component for most links
 - Discuss the need for redirects in web applications (authentication, URL changes, etc.)
 - Introduce the `useRouter` hook
 - Explain how to access various router properties (push, replace, etc.)
 - Demonstrate programmatic navigation using `router.push` and `router.replace`
+
+#### Working With `params` and `searchParams` in Server Components
+
+- Mention that the aforementioned hooks don't work in Server Components (Next.js pages)
+- Explain that we can use the object Next.js passes to page functions to get `params` and `searchParams` on the server-side
+- Demonstrate usage with a sample page function like this:
+
+```typescript jsx
+// Url /{id}?query={query}
+export default async function IdPage({ params, searchParams }) {
+  const id = (await params).id;
+  const query = (await searchParams).query;
+
+  return <h1>Hello, the id is {id} and query is {query}</h1>
+}
+```
 
 ### Advanced: Server Functions & API Routes
 
@@ -126,46 +142,23 @@
 - Explore the folder structure created and research elements you don't understand
 - Run the app using `npm run dev`
 
-### 2. Create a Page That Renders the NASA Astronomy Picture of the Day (With Caption) using Server Side Rendering
+### 2. Create a Page That Renders a random dog image using Server Side Rendering
 
-- Use the [NASA API](https://api.nasa.gov/#MarsPhotos) to fetch the Astronomy Picture of the Day data
+- Use [the dog.ceo API](https://dog.ceo/dog-api/documentation/) to fetch a random image of a dog
 - Implement [data fetching](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching) to fetch the data during the render
-- Render the fetched image and caption on the page
+- Render the fetched image on the page
 
-### 3. Dynamic Rendering With `useEffect`
+### 3. Fetch placeholder blog posts from an API
 
-#### Create a component that fetches NASA Mars Rover Photos from an API (with caption)
+- Follow the [“Fetching Data”/“with the fetch API” section in the Next.js docs](https://nextjs.org/docs/app/getting-started/fetching-data#with-the-fetch-api):
+- Fetch the placeholder blog posts in a Server Component, using fetch, from [JSON Placeholder API](https://jsonplaceholder.typicode.com/posts)
+- Show a list of all unique `userId`s in the JSON
+- Show a count of the unique users
 
-- Use the [NASA API](https://api.nasa.gov/#MarsPhotos) to fetch Mars Rover photos
-- Implement [client-side data fetching](https://nextjs.org/docs/pages/building-your-application/rendering/client-side-rendering) using the `useEffect` hook
-
-#### Use `useEffect` to Fetch Data on Component Mount
-
-- Fetch the data when the component mounts
-- Handle component unmount and dependency updates
-
-#### Render Fetched Data in the Component
-
-- Display the fetched photos and captions in the component
-
-### 4. Routing and Navigation Exercise
-
-#### Create a Blog Website With Dynamic Routes to Different Blog Posts
-
-- Create a route `/blogs` that displays blogs
-- Create a dynamic route for a blog post that displays the title from the route. For example, `/blogs/my-new-post` should dynamically display "My New Post".
-- Hint: Check out the [documentation](https://nextjs.org/docs/app/api-reference/functions/use-params) for `useParams`.
-
-#### Create a Page That Displays a NASA EPIC Image on a Different Date Depending on a Query String Parameter Received
-
-- Use the [NASA API](https://api.nasa.gov/#EPIC) to fetch EPIC images
-- Access the query string parameter using `useSearchParams`
-- Fetch and display the EPIC image for the specified date
-
-### 5. Client vs. Server Exercise
+### 4. Client vs. Server Exercise
 
 - Create a component that renders 10 articles from a JSON array
-- You may use Generative AI to create **only** these articles, or use example text (search for "Lorem Ipsum generator")
+- Download the current JSON from [the Vercel blog API](https://api.vercel.app/blog) – **Attention: Rate limits apply. It's best if one person fetches the JSON and posts it in the team's Slack channel**
 - Create a page that renders the 10 articles on the server
 - Create a page that renders the 10 articles on the client
 - Use your browser's performance panel to measure the performance of both versions
@@ -175,6 +168,20 @@
 #### Docs
 
 - [Next.js Docs on Server and Client Components](https://nextjs.org/docs/app/getting-started/server-and-client-components)
+
+### 5. Routing and Navigation Exercise
+
+#### Create a Blog Website With Dynamic Routes to Different Blog Posts
+
+- Create a route `/blogs` that displays blogs
+- Create a dynamic route for a blog post that displays the title from the route. For example, `/blogs/my-new-post` should dynamically display "My New Post".
+- Hint: Check out the [documentation](https://nextjs.org/docs/app/api-reference/functions/use-params) for `useParams`, if you add `'use client'` to your page, otherwise check [this page to help you choose](https://nextjs.org/docs/app/getting-started/server-and-client-components#when-to-use-server-and-client-components.)
+
+#### Create a page that displays an image of a dog of a specific breed depending on a query string parameter received
+
+- Use [the dog.ceo API](https://dog.ceo/dog-api/documentation/) to display an image of a dog of a specific breed
+- Get the breed from the query string, in a URL like this: `http://localhost:4000?breed=elkhound`
+- Fetch and display the image for the specified breed
 
 ### 6. Server Functions (or Server Actions) & API Routes Exercise
 
