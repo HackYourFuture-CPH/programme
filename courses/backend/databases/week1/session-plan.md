@@ -120,7 +120,7 @@ CREATE TABLE task (
 
 ```sql
 INSERT INTO user (name, email, phone) VALUES
-  ('John Doe', '', '+4512345678'),
+  ('John Doe', 'john@gmail.com', '+4512345678'),
   ('Jane Smith', 'jane@gmail.com', '+4512345679');
 
 INSERT INTO task (title, description, created, updated, due_date, status) VALUES
@@ -162,12 +162,13 @@ CREATE TABLE status (
 INSERT INTO status (name) VALUES ('Not started'), ('In progress'), ('Done');
 
 -- Modify task table to use status_id
+-- Note: DEFAULT 1 is a hardcoded ID
 ALTER TABLE task ADD COLUMN status_id INTEGER REFERENCES status(id) DEFAULT 1;
 
 -- Update existing tasks to use status_id
-UPDATE task SET status_id = 1 WHERE status = 'Not started';
-UPDATE task SET status_id = 2 WHERE status = 'In progress';
-UPDATE task SET status_id = 3 WHERE status = 'Done';
+UPDATE task SET status_id = (SELECT id FROM status WHERE name = 'Not started') WHERE status = 'Not started';
+UPDATE task SET status_id = (SELECT id FROM status WHERE name = 'In progress') WHERE status = 'In progress';
+UPDATE task SET status_id = (SELECT id FROM status WHERE name = 'Done') WHERE status = 'Done';
 
 -- Finally, remove old status column after migration
 ALTER TABLE task DROP COLUMN status;
@@ -184,6 +185,10 @@ Normally this is known as [database migrations](https://en.wikipedia.org/wiki/Sc
 #### 2. Create a linking table for users and tasks to handle many-to-many relationships
 
 ```sql
+-- SQLite does not enforce foreign keys by default.
+-- Run this once per connection to enable ON DELETE CASCADE and other constraints.
+PRAGMA foreign_keys = ON;
+
 -- Many-to-many relationship between users and tasks
 CREATE TABLE user_task (
   user_id INTEGER NOT NULL,
@@ -194,7 +199,11 @@ CREATE TABLE user_task (
 );
 
 -- Link a user to a task
-INSERT INTO user_task (user_id, task_id) VALUES (1, 1);
+INSERT INTO user_task (user_id, task_id)
+VALUES (
+  (SELECT id FROM user WHERE email = 'john@gmail.com'),
+  (SELECT id FROM task WHERE title = 'Study SQL Queries')
+);
 ```
 
 > [!IMPORTANT] > **What we have done:**
