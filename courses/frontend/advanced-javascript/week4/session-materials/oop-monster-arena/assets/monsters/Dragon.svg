@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Dragon">
+  <!-- Tail (drawn first so body overlaps it) -->
+  <path d="M 65,155 Q 30,175 45,195 Q 55,175 75,165 Z" fill="#922b21"/>
+  <!-- Dragon body -->
+  <ellipse cx="100" cy="130" rx="55" ry="35" fill="#c0392b"/>
+  <!-- Dragon neck -->
+  <ellipse cx="100" cy="90" rx="22" ry="30" fill="#c0392b"/>
+  <!-- Dragon head -->
+  <ellipse cx="100" cy="62" rx="28" ry="22" fill="#c0392b"/>
+  <!-- Dragon snout -->
+  <ellipse cx="115" cy="70" rx="18" ry="11" fill="#e74c3c"/>
+  <!-- Eye -->
+  <circle cx="107" cy="56" r="5" fill="#f1c40f"/>
+  <circle cx="108" cy="56" r="2.5" fill="#111"/>
+  <!-- Nostril -->
+  <circle cx="124" cy="72" r="3" fill="#922b21"/>
+  <!-- Left wing -->
+  <polygon points="55,110 10,55 45,125" fill="#922b21"/>
+  <polygon points="55,110 10,55 30,60 50,105" fill="#e74c3c" opacity="0.6"/>
+  <!-- Right wing -->
+  <polygon points="145,110 190,55 155,125" fill="#922b21"/>
+  <polygon points="145,110 190,55 170,60 150,105" fill="#e74c3c" opacity="0.6"/>
+  <!-- Belly scales -->
+  <ellipse cx="100" cy="135" rx="35" ry="22" fill="#e74c3c" opacity="0.5"/>
+  <!-- Fire breath -->
+  <ellipse cx="132" cy="76" rx="12" ry="6" fill="#f39c12" opacity="0.9"/>
+  <ellipse cx="145" cy="74" rx="9" ry="4" fill="#f1c40f" opacity="0.8"/>
+  <ellipse cx="156" cy="72" rx="6" ry="3" fill="#fff" opacity="0.6"/>
+  <!-- Claws -->
+  <line x1="75" y1="163" x2="68" y2="175" stroke="#922b21" stroke-width="3" stroke-linecap="round"/>
+  <line x1="85" y1="165" x2="80" y2="178" stroke="#922b21" stroke-width="3" stroke-linecap="round"/>
+  <line x1="115" y1="165" x2="120" y2="178" stroke="#922b21" stroke-width="3" stroke-linecap="round"/>
+  <line x1="125" y1="163" x2="132" y2="175" stroke="#922b21" stroke-width="3" stroke-linecap="round"/>
+  <!-- Horns -->
+  <polygon points="88,42 82,18 96,40" fill="#7d3c98"/>
+  <polygon points="106,40 110,16 116,39" fill="#7d3c98"/>
+</svg>

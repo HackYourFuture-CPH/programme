@@ -77,6 +77,7 @@ Total: 18 weeks
 - [ ] Use logging and debugging tools to monitor and troubleshoot applications
 - [ ] Connect to databases and implement CRUD operations
 - [ ] Test APIs using Postman
+- [ ] Document APIs using Swagger/OpenAPI
 
 ### [Specialist Career Training](/shared-modules/specialist-career-training)
 

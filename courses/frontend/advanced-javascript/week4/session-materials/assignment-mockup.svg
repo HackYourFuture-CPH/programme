@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 600" font-family="system-ui, sans-serif">
+
+  <!-- Background -->
+  <rect width="720" height="600" fill="#f5f5f5"/>
+
+  <!-- App shell -->
+  <rect x="40" y="30" width="640" height="540" rx="10" fill="white" stroke="#e0e0e0" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <rect x="40" y="30" width="640" height="56" rx="10" fill="#1a1a2e"/>
+  <rect x="40" y="66" width="640" height="20" fill="#1a1a2e"/>
+  <text x="360" y="65" text-anchor="middle" fill="white" font-size="18" font-weight="600">Screenshot Saver</text>
+
+  <!-- ── Generate section ── -->
+  <text x="68" y="120" fill="#444" font-size="13" font-weight="600" letter-spacing="0.5">GENERATE SCREENSHOT</text>
+
+  <!-- URL input -->
+  <rect x="68" y="132" width="460" height="40" rx="6" fill="white" stroke="#c8c8c8" stroke-width="1.5"/>
+  <text x="84" y="157" fill="#aaa" font-size="14">https://example.com</text>
+
+  <!-- Generate button -->
+  <rect x="542" y="132" width="130" height="40" rx="6" fill="#4f46e5"/>
+  <text x="607" y="157" text-anchor="middle" fill="white" font-size="14" font-weight="500">Generate</text>
+
+  <!-- Preview card -->
+  <rect x="68" y="190" width="584" height="160" rx="8" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1.5"/>
+
+  <!-- Fake screenshot image -->
+  <rect x="84" y="206" width="200" height="128" rx="4" fill="#e2e8f0"/>
+  <!-- fake browser chrome inside image -->
+  <rect x="84" y="206" width="200" height="22" rx="4" fill="#cbd5e1"/>
+  <circle cx="97" cy="217" r="4" fill="#f87171"/>
+  <circle cx="110" cy="217" r="4" fill="#fbbf24"/>
+  <circle cx="123" cy="217" r="4" fill="#34d399"/>
+  <rect x="135" y="211" width="130" height="12" rx="3" fill="white" opacity="0.6"/>
+  <!-- fake page content lines -->
+  <rect x="92" y="238" width="180" height="8" rx="2" fill="#94a3b8"/>
+  <rect x="92" y="254" width="140" height="8" rx="2" fill="#94a3b8"/>
+  <rect x="92" y="270" width="160" height="8" rx="2" fill="#94a3b8"/>
+  <rect x="92" y="286" width="100" height="8" rx="2" fill="#94a3b8"/>
+  <rect x="92" y="302" width="170" height="8" rx="2" fill="#94a3b8"/>
+
+  <!-- Card info + save button -->
+  <text x="302" y="228" fill="#333" font-size="14" font-weight="600">https://example.com</text>
+  <text x="302" y="248" fill="#888" font-size="12">Generated just now</text>
+
+  <rect x="302" y="270" width="110" height="34" rx="6" fill="#10b981"/>
+  <text x="357" y="292" text-anchor="middle" fill="white" font-size="13" font-weight="500">Save</text>
+
+  <!-- ── Saved list ── -->
+  <text x="68" y="382" fill="#444" font-size="13" font-weight="600" letter-spacing="0.5">SAVED SCREENSHOTS</text>
+
+  <!-- Saved item 1 -->
+  <rect x="68" y="394" width="584" height="62" rx="7" fill="white" stroke="#e0e0e0" stroke-width="1.5"/>
+  <!-- thumb -->
+  <rect x="82" y="406" width="52" height="38" rx="3" fill="#e2e8f0"/>
+  <rect x="82" y="406" width="52" height="12" rx="3" fill="#cbd5e1"/>
+  <rect x="88" y="424" width="40" height="4" rx="1" fill="#94a3b8"/>
+  <rect x="88" y="432" width="30" height="4" rx="1" fill="#94a3b8"/>
+  <!-- text -->
+  <text x="148" y="421" fill="#333" font-size="13" font-weight="500">https://google.com</text>
+  <text x="148" y="439" fill="#aaa" font-size="11">Saved 2 hours ago</text>
+  <!-- delete btn -->
+  <rect x="581" y="408" width="58" height="28" rx="5" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="610" y="427" text-anchor="middle" fill="#dc2626" font-size="12" font-weight="500">Delete</text>
+
+  <!-- Saved item 2 -->
+  <rect x="68" y="466" width="584" height="62" rx="7" fill="white" stroke="#e0e0e0" stroke-width="1.5"/>
+  <rect x="82" y="478" width="52" height="38" rx="3" fill="#e2e8f0"/>
+  <rect x="82" y="478" width="52" height="12" rx="3" fill="#cbd5e1"/>
+  <rect x="88" y="496" width="40" height="4" rx="1" fill="#94a3b8"/>
+  <rect x="88" y="504" width="30" height="4" rx="1" fill="#94a3b8"/>
+  <text x="148" y="493" fill="#333" font-size="13" font-weight="500">https://github.com</text>
+  <text x="148" y="511" fill="#aaa" font-size="11">Saved yesterday</text>
+  <rect x="581" y="480" width="58" height="28" rx="5" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="610" y="499" text-anchor="middle" fill="#dc2626" font-size="12" font-weight="500">Delete</text>
+
+  <!-- Saved item 3 — ghost / loading state -->
+  <rect x="68" y="538" width="584" height="18" rx="5" fill="#f0f0f0"/>
+  <rect x="68" y="538" width="260" height="18" rx="5" fill="#e5e5e5"/>
+
+</svg>
