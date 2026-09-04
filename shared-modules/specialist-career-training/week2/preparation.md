@@ -12,6 +12,11 @@
 
 - [ ] Practice solving simple problems out loud.\
 
+- [ ] Frontend trainees: use the
+      [React interview preparation path from FrontendAtlas](https://frontendatlas.com/guides/framework-prep/react-prep-path)
+      to choose a 7-, 14-, or 30-day plan and rehearse hooks, state, rendering,
+      testing, and performance trade-offs before the mock interview.
+
 - [ ] Review your elevator pitch and be ready to confidently present yourself at the beginning of the interview
 
 - [ ] Come ready to engage and ask questions.
